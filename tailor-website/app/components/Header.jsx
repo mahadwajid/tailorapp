@@ -54,7 +54,7 @@ export default function Header() {
             className={`
               text-[14px]
               leading-[24px]
-              font-[500]
+              font-satoshi
               hover:text-[#9A54FD]
               transition
               ${

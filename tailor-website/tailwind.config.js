@@ -4,6 +4,14 @@ module.exports = {
     "./app/**/*.{js,jsx,ts,tsx}",
     "./components/**/*.{js,jsx,ts,tsx}",
   ],
-  theme: {},
+ theme: {
+  extend: {
+    fontFamily: {
+      satoshi: ["var(--font-satoshi)"],
+      gelica: ["var(--font-gelica)"],
+    },
+  },
+},
+
   plugins: [],
 };
