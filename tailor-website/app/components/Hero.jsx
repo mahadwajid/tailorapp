@@ -2,7 +2,8 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <div className="w-full h-[800px] relative">
+   <div className="w-full h-[800px] relative border border-black">
+
       {/* Background Image */}
       <Image
         src="/images/Hero.png"

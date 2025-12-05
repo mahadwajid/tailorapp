@@ -33,7 +33,7 @@ export default function RootLayout({ children }) {
         {/* your layout code */}
         <div className="relative">
           {isHome && (
-            <div className="relative w-full h-[800px]">
+            <div className="relative w-full h-[800px] mb-[-100px]">
               <Hero />
             </div>
           )}
@@ -43,7 +43,7 @@ export default function RootLayout({ children }) {
           </div>
         </div>
 
-        <main className={isHome ? "mt-[800px] min-h-screen" : "min-h-screen"}>
+        <main className={isHome ? "min-h-screen" : "min-h-screen"}>
           {children}
         </main>
 
