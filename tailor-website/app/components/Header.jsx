@@ -30,7 +30,7 @@ export default function Header() {
         py-[10px]
         mx-auto
         mt-[40px]
-        font-[Satoshi]
+        font-satoshi
       "
       style={{ backdropFilter: "blur(10px)" }}
     >
@@ -81,6 +81,7 @@ export default function Header() {
           rounded-full
           hover:opacity-80
           transition
+          font-satoshi
         "
       >
         Download Our App →

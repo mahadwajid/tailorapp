@@ -5,68 +5,67 @@ export default function Home() {
     <>
 
       {/* Why Choose Us Section */}
-      <section className="w-full max-w-[1200px] mx-auto mt-[0px] mt-[100px] px-6 border border-black">
-
-        <div className="grid grid-cols-4 gap-8">
+      <section className="w-full max-w-[1200px] mx-auto mt-[100px] px-6 py-8 bg-white rounded-[8px]">
+        <div className="grid grid-cols-4 gap-6">
 
           {/* Left Title */}
           <div className="col-span-1">
-            <h2 className="font-gelica font-normal text-[48px] leading-tight text-black">
+            <h2 className="font-gelica font-normal text-[42px] leading-tight text-black">
               Why <br /> Choose Us
             </h2>
           </div>
 
           {/* Features */}
-          <div className="col-span-3 grid grid-cols-3 gap-10">
+          <div className="col-span-3 grid grid-cols-3 gap-8">
 
             {/* Feature 1 */}
-            <div className="flex flex-col gap-3">
-              <h3 className="font-gelica text-[24px] text-black">
+            <div className="flex flex-col gap-2.5">
+              <h3 className="font-gelica text-[22px] text-black">
                 Easy to Use
               </h3>
 
-              <p className="font-satoshi text-[16px] leading-[1.6] text-gray-700">
+              <p className="font-satoshi text-[15px] leading-[1.6] text-gray-700">
                 Designed with tailors in mind—simple, clean tools let you manage
                 orders, measurements, and customers without any tech stress.
               </p>
 
-              <a href="#" className="font-satoshi text-[14px] text-[#6B57FF] flex items-center gap-2 mt-2 hover:opacity-80 transition">
+              <a href="#" className="font-satoshi text-[14px] text-[#6B57FF] flex items-center gap-2 mt-1 hover:opacity-80 transition">
                 More Info
-                <span className="text-[18px]">→</span>
+                <span className="text-[16px]">→</span>
               </a>
             </div>
 
             {/* Feature 2 */}
-            <div className="flex flex-col gap-3">
-              <h3 className="font-gelica text-[24px] text-black">
+            <div className="flex flex-col gap-2.5">
+              <h3 className="font-gelica text-[22px] text-black">
                 Time Saver
               </h3>
 
-              <p className="font-satoshi text-[16px] leading-[1.6] text-gray-700">
+              <p className="font-satoshi text-[15px] leading-[1.6] text-gray-700">
                 Save templates, reuse measurements, and handle every order quickly,
                 so you can serve customers faster and reduce waiting time.
               </p>
 
-              <a href="#" className="font-satoshi text-[14px] text-[#6B57FF] flex items-center gap-2 mt-2 hover:opacity-80 transition">
+              <a href="#" className="font-satoshi text-[14px] text-[#6B57FF] flex items-center gap-2 mt-1 hover:opacity-80 transition">
                 More Info
-                <span className="text-[18px]">→</span>
+                <span className="text-[16px]">→</span>
               </a>
             </div>
 
             {/* Feature 3 */}
-            <div className="flex flex-col gap-3">
-              <h3 className="font-gelica text-[24px] text-black">
+            <div className="flex flex-col gap-2.5">
+              <h3 className="font-gelica text-[22px] text-black">
                 Reliable & Secure
               </h3>
 
-              <p className="font-satoshi text-[16px] leading-[1.6] text-gray-700">
+              <p className="font-satoshi text-[15px] leading-[1.6] text-gray-700">
                 All your shop data is safely stored and organized digitally, making
                 it easy to access anytime while keeping your business information secure.
               </p>
 
-              <a href="#" className="font-satoshi text-[14px] text-[#6B57FF] flex items-center gap-2 mt-2 hover:opacity-80 transition">
+              <a href="#" className="font-satoshi text-[14px] text-[#6B57FF] flex items-center gap-2 mt-1 hover:opacity-80 transition">
                 More Info
-                <span className="text-[18px]">→</span>
+                <span className="text-[16px]">→</span>
               </a>
             </div>
 
@@ -75,22 +74,22 @@ export default function Home() {
       </section>
 
       {/* Explore Categories Section */}
-      <section className="w-full max-w-[1200px] mx-auto mt-[0px] bg-[#F7F7F7] px-6">
+      <section className="w-full mt-[0px] bg-[#F7F7F7] py-10">
+        <div className="max-w-[1200px] mx-auto px-6">
+          {/* Section Heading */}
+          <div className="text-center mb-[60px] mt-10">
+            <h2 className="font-gelica text-[42px] text-black mb-3">
+              Explore <span className="bg-gradient-to-r from-[#FF6F61] to-[#9A54FD] bg-clip-text text-transparent">Categories</span>
+            </h2>
 
-        {/* Section Heading */}
-        <div className="text-center mb-[60px] mt-10">
-          <h2 className="font-gelica text-[42px] text-black mb-3">
-            Explore <span className="bg-gradient-to-r from-[#FF6F61] to-[#9A54FD] bg-clip-text text-transparent">Categories</span>
-          </h2>
+            <p className="font-satoshi text-[18px] text-gray-600 max-w-[780px] mx-auto leading-[1.6]">
+              Easily manage and browse orders for every type of clothing. From men's shirts to
+              women's dresses, we've got it organized
+            </p>
+          </div>
 
-          <p className="font-satoshi text-[18px] text-gray-600 max-w-[780px] mx-auto leading-[1.6]">
-            Easily manage and browse orders for every type of clothing. From men’s shirts to
-            women’s dresses, we’ve got it organized
-          </p>
-        </div>
-
-        {/* Category Grid */}
-        <div className="grid grid-cols-3 gap-10">
+          {/* Category Grid */}
+          <div className="grid grid-cols-3 gap-10">
 
           {/* Men’s Clothing */}
           <div className="relative group rounded-[20px] overflow-hidden shadow-md cursor-pointer">
@@ -158,7 +157,7 @@ export default function Home() {
             </div>
           </div>
 
-
+          </div>
         </div>
       </section>
 
@@ -189,7 +188,7 @@ export default function Home() {
 
 
           {/* ---------- RIGHT IMAGE (cropped) ---------- */}
-          <div className="relative flex justify-end md:-mr-[180px] h-[460px] overflow-hidden">
+          <div className="relative flex justify-end md:-mr-[182px] h-[460px] overflow-hidden">
 
             <Image
               src="/images/Full Mobile 2.png"

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-   <div className="w-full h-[800px] relative border border-black">
+   <div className="w-full h-[800px] relative">
 
       {/* Background Image */}
       <Image
@@ -51,65 +51,38 @@ export default function Hero() {
         </p>
       </div>
 
-      <div
-        className="absolute flex flex-col items-center justify-center gap-[24px] text-center"
-        style={{
-          width: "200px",
-          height: "180px",
-          top: "390px",
-          left: "1290px",
-          border: "2px solid #1a1919ff",
-        }}
-      >
-
-        {/* Badge */}
-        <div className="flex flex-col items-center gap-[15px]">
-
-          {/* Circle */}
-          <div className="w-[32px] h-[32px] rounded-full border border-white/60 flex items-center justify-center">
-            <div className="w-[10px] h-[10px] bg-white rounded-full" />
-          </div>
-
-          {/* Connector + Pill */}
-          <div className="relative">
-            {/* Connector */}
-            <div className="absolute -top-[12px] left-1/2 -translate-x-1/2 w-[24px] h-[12px] bg-white/60 rounded-t-full" />
-
-            {/* Pill */}
-            <div className="px-[28px] py-[10px] bg-white/20 backdrop-blur-sm rounded-full border border-white/40">
-              <p className="font-satoshi text-[12px] text-white">
-                Tailor-Focused
-              </p>
-            </div>
-          </div>
-
-        </div>
+      {/* Hero 1: Top-Left Corner - Cluster of Circles */}
+      <div className="absolute top-120 left-310 z-10">
+        <Image
+          src="/images/Hero1.png"
+          alt="Status Indicators"
+          width={120}
+          height={100}
+          className="object-contain"
+        />
       </div>
 
+      
+       <div className="absolute top-[620px] right-[500px] z-10">
+        <Image
+          src="/images/Hero2.png"
+          alt="Tailor-Focused"
+          width={200}
+          height={180}
+          className="object-contain"
+        />
+      </div> 
 
-      <div
-        className="absolute flex items-center gap-[12px]"
-        style={{
-          width: "auto",
-          height: "48px",
-          top: "590px",
-          left: "750px",
-        }}
-      >
-        {/* Left Circle Badge */}
-        <div className="w-[32px] h-[32px] rounded-full border border-white/60 flex items-center justify-center bg-white/20 backdrop-blur-sm">
-          <div className="w-[10px] h-[10px] bg-white rounded-full" />
-        </div>
-
-        {/* Combined Pill */}
-        <div className="px-[22px] py-[10px] bg-white/20 backdrop-blur-sm border border-white/40 rounded-full flex items-center justify-center">
-          <p className="font-satoshi text-[16px] text-white">
-            Reliable & Secure
-          </p>
-        </div>
+      {/* Hero 3: Bottom-Center-Right - Reliable & Secure Badge */}
+     <div className="absolute bottom-[200px] right-[1150px] z-10">
+        <Image
+          src="/images/Hero3.png"
+          alt="Reliable & Secure"
+          width={100}
+          height={120}
+          className="object-contain"
+        />
       </div>
-
-
 
     </div>
   );

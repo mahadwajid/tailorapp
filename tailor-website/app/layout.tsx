@@ -18,7 +18,12 @@ const satoshi = localFont({
 
 const gelica = localFont({
   src: [
+    { path: "./../public/Fonts/Gelica - Primary/Gelica - Primary/fonnts.com-Gelica-Light.otf", weight: "300" },
     { path: "./../public/Fonts/Gelica - Primary/Gelica - Primary/fonnts.com-Gelica-Regular.otf", weight: "400" },
+    { path: "./../public/Fonts/Gelica - Primary/Gelica - Primary/fonnts.com-Gelica-Medium.otf", weight: "500" },
+    { path: "./../public/Fonts/Gelica - Primary/Gelica - Primary/fonnts.com-Gelica-Semi-Bold.otf", weight: "600" },
+    { path: "./../public/Fonts/Gelica - Primary/Gelica - Primary/fonnts.com-Gelica-Bold.otf", weight: "700" },
+    { path: "./../public/Fonts/Gelica - Primary/Gelica - Primary/fonnts.com-Gelica-Black.otf", weight: "900" },
   ],
   variable: "--font-gelica",
 })
@@ -28,8 +33,8 @@ export default function RootLayout({ children }) {
   const isHome = pathname === "/"
 
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={`${satoshi.variable} ${gelica.variable}`}>
+    <html lang="en" suppressHydrationWarning className={`${satoshi.variable} ${gelica.variable}`}>
+      <body className="font-satoshi antialiased">
         {/* your layout code */}
         <div className="relative">
           {isHome && (
