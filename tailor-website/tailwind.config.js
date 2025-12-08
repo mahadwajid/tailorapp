@@ -11,6 +11,9 @@ module.exports = {
         gelica: ["var(--font-gelica)", "serif"],
         sans: ["var(--font-satoshi)", "sans-serif"],
       },
+      fontWeight: {
+        black: "900",
+      },
     },
   },
   plugins: [],

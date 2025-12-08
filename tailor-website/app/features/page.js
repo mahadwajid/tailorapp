@@ -1,6 +1,41 @@
+"use client"
+
 import Image from "next/image"
+import { useState } from "react"
 
 export default function Features() {
+  const [openIndex, setOpenIndex] = useState(null)
+
+  const faqs = [
+    {
+      question: "How do I create a new order?",
+      answer: "Simply tap the 'New Order' button, enter customer details and measurements, select the clothing type, and set the delivery date. The order will be automatically saved and tracked."
+    },
+    {
+      question: "Can I save multiple measurement templates?",
+      answer: "Yes! You can create and save unlimited measurement templates for different clothing types. These templates can be reused for repeat customers, saving you time and ensuring consistency."
+    },
+    {
+      question: "How do customers track their orders?",
+      answer: "Customers receive real-time updates through the customer app. They can see order status, progress, and delivery dates. Tailors can also send notifications and updates directly to customers."
+    },
+    {
+      question: "Is MyTailor free to use?",
+      answer: "MyTailor offers a free tier with basic features. Premium plans are available with advanced features like analytics, unlimited templates, and priority support."
+    },
+    {
+      question: "Can I access the app on multiple devices?",
+      answer: "Yes, MyTailor syncs across all your devices. Your data is securely stored in the cloud, so you can access orders, customers, and measurements from any device, anywhere."
+    },
+    {
+      question: "How secure is my customer data?",
+      answer: "We use industry-standard encryption and security measures to protect all your data. Your customer information and order details are safely stored and only accessible to you."
+    }
+  ]
+
+  const toggleFAQ = (index) => {
+    setOpenIndex(openIndex === index ? null : index)
+  }
   return (
     <>
     <section className="w-full bg-white py-10 pt-32">
@@ -8,7 +43,7 @@ export default function Features() {
         
         {/* Top Section - Headline and Subtitle */}
         <div className="text-center mb-8">
-          <h1 className="font-gelica text-[36px] md:text-[44px] leading-tight text-gray-800 mb-3">
+          <h1 className="font-gelica font-black text-[36px] md:text-[44px] leading-tight text-gray-800 mb-3">
             Everything You Need to Run Your{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#9A54FD] to-[#F554D5]">
               Tailor Shop
@@ -22,20 +57,30 @@ export default function Features() {
         {/* Middle Section - App Store Download Buttons */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-10">
           {/* Google Play Button */}
-          <div className="bg-black px-6 py-3 rounded-[10px] flex items-center gap-2.5 cursor-pointer hover:opacity-90 transition">
+          <a 
+            href="https://play.google.com/store/apps/details?id=com.tailorbhai&hl=en&pli=1"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-black px-6 py-3 rounded-[10px] flex items-center gap-2.5 cursor-pointer hover:opacity-90 transition"
+          >
             <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
               <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.5,12.92 20.16,13.19L16.81,12L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z" />
             </svg>
             <span className="text-white font-satoshi text-[14px] font-medium">GET IT ON Google Play</span>
-          </div>
+          </a>
           
           {/* App Store Button */}
-          <div className="bg-black px-6 py-3 rounded-[10px] flex items-center gap-2.5 cursor-pointer hover:opacity-90 transition">
+          <a 
+            href="https://play.google.com/store/apps/details?id=com.tailorbhai&hl=en&pli=1"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-black px-6 py-3 rounded-[10px] flex items-center gap-2.5 cursor-pointer hover:opacity-90 transition"
+          >
             <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
               <path d="M18.71,19.5C17.88,20.74 17,21.95 15.66,21.97C14.32,22 13.89,21.18 12.37,21.18C10.84,21.18 10.37,21.95 9.1,22C7.79,22.05 6.8,20.68 5.96,19.47C4.25,17 2.94,12.45 4.7,9.39C5.57,7.87 7.13,6.91 8.82,6.88C10.1,6.86 11.32,7.75 12.11,7.75C12.89,7.75 14.37,6.68 15.92,6.84C16.57,6.87 18.39,7.1 19.56,8.82C19.47,8.88 17.39,10.1 17.41,12.63C17.44,15.65 20.06,16.66 20.09,16.67C20.06,16.74 19.67,18.11 18.71,19.5M13,3.5C13.73,2.67 14.94,2.04 15.94,2C16.07,3.17 15.6,4.35 14.9,5.19C14.21,6.04 13.07,6.7 11.95,6.61C11.8,5.46 12.36,4.26 13,3.5Z" />
             </svg>
             <span className="text-white font-satoshi text-[14px] font-medium">Download on the App Store</span>
-          </div>
+          </a>
         </div>
 
         {/* Bottom Section - Three Smartphones */}
@@ -61,7 +106,7 @@ export default function Features() {
           
           {/* Section Heading */}
           <div className="text-center mb-8">
-            <h2 className="font-gelica text-[32px] md:text-[36px] leading-tight text-gray-800 mb-2">
+            <h2 className="font-gelica font-black text-[32px] md:text-[36px] leading-tight text-gray-800 mb-2">
               <span className="text-[#FF6F61]">MyTailor</span> Features
             </h2>
             <p className="font-satoshi text-[15px] text-gray-600">
@@ -86,7 +131,7 @@ export default function Features() {
 
             {/* Right: Text Content */}
             <div className="flex flex-col justify-center">
-              <h3 className="font-gelica text-[32px] md:text-[36px] leading-tight text-black mb-3">
+              <h3 className="font-gelica font-black text-[32px] md:text-[36px] leading-tight text-black mb-3">
                 Smart Order Management
               </h3>
               <p className="font-satoshi text-[15px] text-gray-600 leading-[1.6] max-w-[500px]">
@@ -107,13 +152,12 @@ export default function Features() {
             
             {/* Left: Text Content */}
             <div className="flex flex-col justify-center">
-              <h3 className="font-gelica text-[32px] md:text-[36px] leading-tight text-black mb-4">
+              <h3 className="font-gelica font-black text-[32px] md:text-[36px] leading-tight text-black mb-4">
                 Customer Profiles & Measurements
               </h3>
               <div className="font-satoshi text-[15px] text-gray-600 leading-[1.6] space-y-2.5 max-w-[500px]">
-                <p>Save customer details, preferences, and complete measurement history.</p>
-                <p>Access past orders instantly for repeat customers.</p>
-                <p>Give personalized service with minimal effort.</p>
+                <p>Save customer details, preferences, and complete measurement history. Access past orders instantly for repeat customers. Give personalized service with minimal effort.</p>
+               
               </div>
             </div>
 
@@ -154,13 +198,11 @@ export default function Features() {
 
             {/* Right: Text Content */}
             <div className="flex flex-col justify-center">
-              <h3 className="font-gelica text-[32px] md:text-[36px] leading-tight text-black mb-4">
+              <h3 className="font-gelica font-black text-[32px] md:text-[36px] leading-tight text-black mb-4">
                 Clothing Templates
               </h3>
               <div className="font-satoshi text-[15px] text-gray-600 leading-[1.6] space-y-2.5 max-w-[500px]">
-                <p>Create templates for shirts, pants, kurtas, dresses, and more.</p>
-                <p>Reuse templates to save time and avoid mistakes.</p>
-                <p>Maintain consistent quality across all orders.</p>
+                <p>Create templates for shirts, pants, kurtas, dresses, and more. Reuse templates to save time and avoid mistakes. Maintain consistent quality across all orders.</p>
               </div>
             </div>
 
@@ -198,7 +240,7 @@ export default function Features() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
                   </svg>
                 </div>
-                <h3 className="font-gelica text-[20px] text-black mb-2">Multi-Device Sync</h3>
+                <h3 className="font-gelica font-black text-[20px] text-black mb-2">Multi-Device Sync</h3>
                 <p className="font-satoshi text-[14px] text-gray-600 leading-[1.6]">
                   Access your data from any device, anywhere, with secure cloud backup.
                 </p>
@@ -211,7 +253,7 @@ export default function Features() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                   </svg>
                 </div>
-                <h3 className="font-gelica text-[20px] text-black mb-2">Quick Analytics & Insights</h3>
+                <h3 className="font-gelica font-black text-[20px] text-black mb-2">Quick Analytics & Insights</h3>
                 <p className="font-satoshi text-[14px] text-gray-600 leading-[1.6]">
                   Get fast overviews of popular orders, customer trends, and performance.
                 </p>
@@ -224,7 +266,7 @@ export default function Features() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z" />
                   </svg>
                 </div>
-                <h3 className="font-gelica text-[20px] text-black mb-2">Easy Order Filtering & Search</h3>
+                <h3 className="font-gelica font-black text-[20px] text-black mb-2">Easy Order Filtering & Search</h3>
                 <p className="font-satoshi text-[14px] text-gray-600 leading-[1.6]">
                   Find any order or customer instantly with smart filters and search.
                 </p>
@@ -242,7 +284,7 @@ export default function Features() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
                   </svg>
                 </div>
-                <h3 className="font-gelica text-[20px] text-black mb-2">Export Reports</h3>
+                <h3 className="font-gelica font-black text-[20px] text-black mb-2">Export Reports</h3>
                 <p className="font-satoshi text-[14px] text-gray-600 leading-[1.6]">
                   Generate and export order and customer reports for better tracking.
                 </p>
@@ -255,7 +297,7 @@ export default function Features() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                   </svg>
                 </div>
-                <h3 className="font-gelica text-[20px] text-black mb-2">Secure Data Storage</h3>
+                <h3 className="font-gelica font-black text-[20px] text-black mb-2">Secure Data Storage</h3>
                 <p className="font-satoshi text-[14px] text-gray-600 leading-[1.6]">
                   All your customer and order data is safely stored with top-level security.
                 </p>
@@ -269,12 +311,432 @@ export default function Features() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>
                 </div>
-                <h3 className="font-gelica text-[20px] text-black mb-2">Customizable Settings</h3>
+                <h3 className="font-gelica font-black text-[20px] text-black mb-2">Customizable Settings</h3>
                 <p className="font-satoshi text-[14px] text-gray-600 leading-[1.6]">
                   Adjust app preferences to match your shop workflow perfectly.
                 </p>
               </div>
 
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      {/* ==================== GET STARTED TODAY SECTION ==================== */}
+      <section className="w-full py-16">
+        <div className="max-w-[1400px] mx-auto px-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-12">
+            
+            {/* Left Side - Text Content & Buttons */}
+            <div className="flex flex-col">
+              {/* Heading */}
+              <h2 className="font-gelica font-black text-[36px] md:text-[42px] leading-tight text-black mb-4">
+                Get Started Today{" "}
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#9854F5] to-[#F554D5] italic">
+                  For Tailors & Customer
+                </span>
+              </h2>
+              
+              {/* Description */}
+              <p className="font-satoshi text-[16px] text-gray-700 mb-8 leading-[1.6]">
+                Download the apps and start managing orders or placing them instantly
+              </p>
+              
+              {/* CTA Buttons */}
+              <div className="flex flex-col sm:flex-row gap-4">
+                {/* Download for Tailors Button */}
+                <a 
+                  href="https://play.google.com/store/apps/details?id=com.tailorbhai&hl=en&pli=1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-6 py-3 rounded-full bg-white border-2 border-[#9A54FD] text-[#9A54FD] hover:bg-[#9A54FD] hover:text-white transition font-satoshi text-[15px] font-medium flex items-center justify-center gap-2"
+                >
+                  Download for Tailors →
+                </a>
+                
+                {/* Download for Customers Button */}
+                <a 
+                  href="https://play.google.com/store/apps/details?id=com.tailorbhai&hl=en&pli=1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-6 py-3 rounded-full bg-white border-2 border-[#FF6F61] text-[#FF6F61] hover:bg-[#FF6F61] hover:text-white transition font-satoshi text-[15px] font-medium flex items-center justify-center gap-2"
+                >
+                  Download for Customers →
+                </a>
+              </div>
+            </div>
+
+            {/* Right Side - QR Code & App Store Badges */}
+            <div className="flex flex-col items-center md:items-end gap-6">
+              {/* QR Code */}
+              <div className="p-4">
+                <div className="w-[220px] h-[220px] flex items-center justify-center">
+                  <Image
+                    src="/images/Full QR.png"
+                    alt="QR Code"
+                    width={180}
+                    height={180}
+                    className="object-contain w-full h-full"
+                  />
+                </div>
+              </div>
+            
+    
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+
+            {/* ==================== TOP TAILORS SECTION ==================== */}
+            <section className="w-full py-16 bg-[#F7F7F7]">
+        <div className="max-w-[1400px] mx-auto px-6">
+          
+          {/* Section Heading */}
+          <div className="text-center mb-10">
+            <h2 className="font-gelica font-black text-[36px] md:text-[42px] leading-tight text-black mb-2">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF6F61] to-[#9A54FD]">
+                Top Tailors
+              </span>{" "}
+              You Can Trust
+            </h2>
+            <p className="font-satoshi text-[16px] text-gray-600 max-w-[780px] mx-auto leading-[1.6]">
+              Easily manage and browse orders for every type of clothing. From men's shirts to women's dresses, we've got it organized
+            </p>
+          </div>
+
+          {/* Main Content - Two Columns */}
+          <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8 lg:gap-12">
+            
+            {/* Left Column - Tailor Image */}
+            <div className="relative w-full flex items-center justify-center">
+              <div className="relative w-full max-w-[450px] rounded-[20px] overflow-hidden">
+                <Image
+                  src="/images/tailor.png"
+                  alt="Ahmed Ali - Professional Tailor"
+                  width={450}
+                  height={550}
+                  className="object-cover w-full h-auto"
+                />
+              </div>
+            </div>
+
+            {/* Right Column - Profile Content */}
+            <div className="flex flex-col justify-center">
+              
+              {/* Name */}
+              <h3 className="font-gelica font-black text-[36px] md:text-[40px] leading-tight text-black mb-2">
+                Ahmed Ali
+              </h3>
+
+              {/* Description */}
+              <p className="font-satoshi text-[16px] text-gray-600 mb-5 leading-[1.6]">
+                Expert in stitching with consistent quality and on-time delivery.
+              </p>
+
+              {/* Statistics */}
+              <div className="flex flex-wrap gap-4 md:gap-6 mb-5">
+                {/* Customer Rating */}
+                <div className="flex items-center gap-2">
+                  <span className="text-[#9A54FD] text-[18px]">★</span>
+                  <span className="font-satoshi text-[15px] text-gray-700">
+                    4.9 Customer Rating
+                  </span>
+                </div>
+
+                {/* Orders Completed */}
+                <div className="font-satoshi text-[15px] text-gray-700">
+                  450+ Orders Completed
+                </div>
+
+                {/* On-Time Delivery */}
+                <div className="font-satoshi text-[15px] text-gray-700">
+                  98% On-Time Delivery
+                </div>
+              </div>
+
+              {/* CTA Button */}
+              <button className="px-6 py-3 rounded-[12px] bg-white border-2 border-[#9A54FD] text-[#9A54FD] hover:bg-[#9A54FD] hover:text-white transition font-satoshi text-[15px] font-medium w-fit">
+                Book Now →
+              </button>
+            </div>  
+
+          </div>
+        </div>
+      </section>
+
+      {/* ==================== FAQ SECTION ==================== */}
+      <section className="w-full py-12 bg-white">
+        <div className="max-w-[900px] mx-auto px-6">
+          
+          {/* Section Heading */}
+          <div className="text-center mb-8">
+            <h2 className="font-gelica font-black text-[32px] md:text-[36px] leading-tight text-black mb-3">
+              Have Questions?{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#9A54FD] to-[#F554D5] italic">
+                We've Got Answers
+              </span>
+            </h2>
+            <p className="font-satoshi text-[14px] text-gray-600 max-w-[650px] mx-auto leading-[1.6]">
+              Extra features designed to save time, boost efficiency, and keep your tailoring shop running smoothly.
+            </p>
+          </div>
+
+          {/* FAQ Items */}
+          <div className="space-y-3">
+            {faqs.map((faq, index) => (
+              <div
+                key={index}
+                className="bg-white border border-gray-200 rounded-[12px] overflow-hidden transition-all hover:border-gray-300"
+              >
+                {/* Question Button */}
+                <button
+                  onClick={() => toggleFAQ(index)}
+                  className="w-full px-5 py-4 flex items-center justify-between text-left focus:outline-none"
+                >
+                  <span className="font-satoshi text-[15px] text-gray-800 font-medium pr-4">
+                    {faq.question}
+                  </span>
+                  <svg
+                    className={`w-5 h-5 text-gray-500 flex-shrink-0 transition-transform duration-200 ${
+                      openIndex === index ? 'rotate-180' : ''
+                    }`}
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+
+                {/* Answer Content */}
+                <div
+                  className={`overflow-hidden transition-all duration-300 ${
+                    openIndex === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                  }`}
+                >
+                  <div className="px-5 pb-4">
+                    <p className="font-satoshi text-[14px] text-gray-600 leading-[1.6]">
+                      {faq.answer}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="relative w-full py-12 overflow-hidden">
+        {/* Background Image with Gradient Overlay */}
+        <div className="absolute inset-0">
+          <Image
+            src="/images/Explore More.png"
+            alt="Background"
+            fill
+            className="object-cover"
+          />
+          {/* Gradient Overlay - Left to Right */}
+          <div className="absolute inset-0 bg-gradient-to-r from-[#F554D5] to-[#9854F5] opacity-90"></div>
+        </div>
+
+        {/* Content */}
+        <div className="relative z-10 max-w-[1400px] mx-auto px-6">
+          
+          {/* Section Heading */}
+          <div className="text-center mb-10">
+            <h2 className="font-gelica font-black text-[36px] md:text-[42px] leading-tight text-white mb-3">
+              Get Started in 3 Easy Steps
+            </h2>
+            <p className="font-satoshi text-[16px] text-white/90 max-w-[700px] mx-auto leading-[1.6]">
+              From order to delivery, our apps make tailoring simple for both tailors and customers.
+            </p>
+          </div>
+
+          {/* Three Steps */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+            
+            {/* Step 1: Add Customer / Place Order */}
+            <div className="flex flex-col items-center text-center">
+              <div className="w-16 h-16 bg-white rounded-[16px] flex items-center justify-center mb-4 shadow-lg">
+                <svg className="w-8 h-8 text-[#9854F5]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+                </svg>
+              </div>
+              <h3 className="font-gelica font-black text-[22px] md:text-[24px] text-white mb-2">
+                Add Customer / Place Order
+              </h3>
+              <p className="font-satoshi text-[15px] text-white/90 leading-[1.6] max-w-[280px]">
+                Quickly create a new order with all measurements.
+              </p>
+            </div>
+
+            {/* Step 2: Track Progress */}
+            <div className="flex flex-col items-center text-center">
+              <div className="w-16 h-16 bg-white rounded-[16px] flex items-center justify-center mb-4 shadow-lg">
+                <svg className="w-8 h-8 text-[#9854F5]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                </svg>
+              </div>
+              <h3 className="font-gelica font-black text-[22px] md:text-[24px] text-white mb-2">
+                Track Progress
+              </h3>
+              <p className="font-satoshi text-[15px] text-white/90 leading-[1.6] max-w-[280px]">
+                Tailors update status, customers see live updates.
+              </p>
+            </div>
+
+            {/* Step 3: Deliver & Feedback */}
+            <div className="flex flex-col items-center text-center">
+              <div className="w-16 h-16 bg-white rounded-[16px] flex items-center justify-center mb-4 shadow-lg">
+                <svg className="w-8 h-8 text-[#9854F5]" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                </svg>
+              </div>
+              <h3 className="font-gelica font-black text-[22px] md:text-[24px] text-white mb-2">
+                Deliver & Feedback
+              </h3>
+              <p className="font-satoshi text-[15px] text-white/90 leading-[1.6] max-w-[280px]">
+                Complete the order and get instant feedback.
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+         {/* ==================== WHAT TAILORS & CUSTOMERS SAY SECTION ==================== */}
+         <section className="w-full py-12 pt-16 bg-white">
+        <div className="max-w-[1400px] mx-auto px-6">
+          
+          {/* Section Heading */}
+          <div className="mb-8">
+            <h2 className="font-gelica font-black text-[36px] md:text-[42px] leading-tight text-black mb-3">
+              What <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#9854F5] to-[#F554D5]">Tailors & Customers</span> Say
+            </h2>
+            <p className="font-satoshi text-[15px] text-gray-600 leading-[1.6] max-w-[700px]">
+              Real reviews from tailors and customers who love how easy and fast our apps make every order
+            </p>
+          </div>
+
+          {/* Review Cards */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            
+            {/* Card 1: Image Card */}
+            <div className="relative rounded-[20px] overflow-hidden max-w-[320px] mx-auto md:mx-0">
+              <Image
+                src="/images/Feedback1.png"
+                alt="Customer Review"
+                width={400}
+                height={500}
+                className="object-cover w-full h-[450px]"
+              />
+            </div>
+
+            {/* Card 2: Text Review with Background */}
+            <div className="relative rounded-[20px] overflow-visible h-[450px] max-w-[320px] mx-auto md:mx-0">
+              {/* Background Image */}
+              <div className="absolute inset-0 rounded-[20px] overflow-hidden">
+                <Image
+                  src="/images/Feedback2.jpg"
+                  alt="Customer Review Background"
+                  fill
+                  className="object-cover"
+                />
+                {/* Overlay for text readability */}
+                <div className="absolute inset-0 bg-black/30"></div>
+              </div>
+              
+              {/* Content */}
+              <div className="relative z-10 p-6 pt-16 h-full flex flex-col justify-center">
+                {/* Profile Picture */}
+                <div className="absolute -top-10 left-1/2 -translate-x-1/2 w-20 h-20 rounded-full overflow-hidden border-4 border-white shadow-lg z-20">
+                  <Image
+                    src="/images/Feedback profile.png"
+                    alt="Bang Upin"
+                    width={80}
+                    height={80}
+                    className="object-cover w-full h-full"
+                  />
+                </div>
+                
+                {/* Name */}
+                <h3 className="font-gelica font-black text-[20px] text-white text-center mb-1 mt-4">
+                  Bang Upin
+                </h3>
+                
+                {/* Role */}
+                <p className="font-satoshi text-[13px] text-gray-200 text-center mb-4">
+                  Pedagang Asongan
+                </p>
+                
+                {/* Review Text */}
+                <p className="font-satoshi text-[14px] text-white leading-[1.6] text-center mb-4">
+                  "Thank you so much, my space now looks more luxurious and expensive"
+                </p>
+                
+                {/* Rating Stars */}
+                <div className="flex justify-center gap-1">
+                  {[...Array(4)].map((_, i) => (
+                    <span key={i} className="text-[#FF6F61] text-[18px]">★</span>
+                  ))}
+                  <span className="text-gray-300 text-[18px]">★</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Card 3: Text Review with Background */}
+            <div className="relative rounded-[20px] overflow-visible h-[450px] max-w-[320px] mx-auto md:mx-0">
+              {/* Background Image */}
+              <div className="absolute inset-0 rounded-[20px] overflow-hidden">
+                <Image
+                  src="/images/Feedback3.jpg"
+                  alt="Customer Review Background"
+                  fill
+                  className="object-cover"
+                />
+                {/* Overlay for text readability */}
+                <div className="absolute inset-0 bg-black/30"></div>
+              </div>
+              
+              {/* Content */}
+              <div className="relative z-10 p-6 pt-16 h-full flex flex-col justify-center">
+                {/* Profile Picture */}
+                <div className="absolute -top-10 left-1/2 -translate-x-1/2 w-20 h-20 rounded-full overflow-hidden border-4 border-white shadow-lg z-20">
+                  <Image
+                    src="/images/Feedback profile.png"
+                    alt="Siti Aminah"
+                    width={80}
+                    height={80}
+                    className="object-cover w-full h-full"
+                  />
+                </div>
+                
+                {/* Name */}
+                <h3 className="font-gelica font-black text-[20px] text-white text-center mb-1 mt-4">
+                  Siti Aminah
+                </h3>
+                
+                {/* Role */}
+                <p className="font-satoshi text-[13px] text-gray-200 text-center mb-4">
+                  Konsultan Kecantikan
+                </p>
+                
+                {/* Review Text */}
+                <p className="font-satoshi text-[14px] text-white leading-[1.6] text-center mb-4">
+                  "With this new design, my clients feel more confident and satisfied"
+                </p>
+                
+                {/* Rating Stars */}
+                <div className="flex justify-center gap-1">
+                  {[...Array(4)].map((_, i) => (
+                    <span key={i} className="text-[#FF6F61] text-[18px]">★</span>
+                  ))}
+                  <span className="text-gray-300 text-[18px]">★</span>
+                </div>
+              </div>
             </div>
 
           </div>

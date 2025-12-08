@@ -4,15 +4,15 @@ import Link from "next/link"
 export default function Footer() {
   return (
     <footer className="w-full bg-[#2A2A2A]">
-      <div className="max-w-[1400px] mx-auto px-6 py-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-5">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 py-6 sm:py-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-5">
           
           {/* Column 1: Branding and Social Media */}
           <div className="flex flex-col">
             {/* Logo */}
             <div className="mb-3">
               <Image
-                src="/Logo.png"
+                src="/images/White Logo.png"
                 alt="My Tailor Logo"
                 width={100}
                 height={32}
@@ -47,7 +47,7 @@ export default function Footer() {
 
           {/* Column 2: Services */}
           <div className="flex flex-col">
-            <h3 className="font-gelica text-[16px] text-white font-bold mb-3">Services</h3>
+            <h3 className="font-gelica font-black text-[16px] text-white mb-3">Services</h3>
             <ul className="flex flex-col gap-1.5">
               <li><Link href="#" className="font-satoshi text-[13px] text-white hover:text-[#9A54FD] transition">Custom Stitching</Link></li>
               <li><Link href="#" className="font-satoshi text-[13px] text-white hover:text-[#9A54FD] transition">Alterations</Link></li>
@@ -59,7 +59,7 @@ export default function Footer() {
 
           {/* Column 3: Quick Links */}
           <div className="flex flex-col">
-            <h3 className="font-gelica text-[16px] text-white font-bold mb-3">Quick Links</h3>
+            <h3 className="font-gelica font-black text-[16px] text-white mb-3">Quick Links</h3>
             <ul className="flex flex-col gap-1.5">
               <li><Link href="/features" className="font-satoshi text-[13px] text-white hover:text-[#9A54FD] transition">MyTailor Features</Link></li>
               <li><Link href="/community" className="font-satoshi text-[13px] text-white hover:text-[#9A54FD] transition">Community</Link></li>
@@ -70,7 +70,7 @@ export default function Footer() {
 
           {/* Column 4: Contact Information */}
           <div className="flex flex-col">
-            <h3 className="font-gelica text-[16px] text-white font-bold mb-3">Contact</h3>
+            <h3 className="font-gelica font-black text-[16px] text-white mb-3">Contact</h3>
             <div className="flex flex-col gap-2">
               <p className="font-satoshi text-[13px] text-white">
                 Email: <a href="mailto:Support@mytailor.com" className="text-[#9A54FD] hover:underline">Support@mytailor.com</a>
