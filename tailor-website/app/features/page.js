@@ -1,6 +1,7 @@
 "use client"
 
 import Image from "next/image"
+import Link from "next/link"
 import { useState } from "react"
 
 export default function Features() {
@@ -38,11 +39,11 @@ export default function Features() {
   }
   return (
     <>
-    <section className="w-full bg-white py-10 pt-32">
+    <section data-aos="fade-up" className="w-full bg-white py-10 pt-32">
       <div className="max-w-[1200px] mx-auto px-6">
         
         {/* Top Section - Headline and Subtitle */}
-        <div className="text-center mb-8">
+        <div data-aos="fade-down" className="text-center mb-8">
           <h1 className="font-gelica font-black text-[36px] md:text-[44px] leading-tight text-gray-800 mb-3">
             Everything You Need to Run Your{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#9A54FD] to-[#F554D5]">
@@ -55,7 +56,7 @@ export default function Features() {
         </div>
 
         {/* Middle Section - App Store Download Buttons */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-10">
+        <div data-aos="zoom-in" className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-10">
           {/* Google Play Button */}
           <a 
             href="https://play.google.com/store/apps/details?id=com.tailorbhai&hl=en&pli=1"
@@ -84,7 +85,7 @@ export default function Features() {
         </div>
 
         {/* Bottom Section - Three Smartphones */}
-        <div className="flex items-center justify-center">
+        <div data-aos="fade-up" data-aos-delay="200" className="flex items-center justify-center">
           {/* Mobile Phones Image - Single Image Showing All Three Phones */}
           <div className="relative w-full max-w-[750px] flex items-center justify-center">
             <Image
@@ -101,7 +102,7 @@ export default function Features() {
     </section>
 
       {/* Smart Order Management Section */}
-      <section className="w-full bg-white py-8">
+      <section data-aos="fade-up" className="w-full bg-white py-8">
         <div className="max-w-[1200px] mx-auto px-6">
           
           {/* Section Heading */}
@@ -118,7 +119,7 @@ export default function Features() {
           <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
             
             {/* Left: Mobile Phone Image - Cropped to 80% */}
-            <div className="relative flex items-center justify-center">
+            <div data-aos="fade-right" className="relative flex items-center justify-center">
               <div className="relative w-full max-w-[350px] h-[450px] overflow-hidden">
                 <img
                   src="/images/3.png"
@@ -130,7 +131,7 @@ export default function Features() {
             </div>
 
             {/* Right: Text Content */}
-            <div className="flex flex-col justify-center">
+            <div data-aos="fade-left" className="flex flex-col justify-center">
               <h3 className="font-gelica font-black text-[32px] md:text-[36px] leading-tight text-black mb-3">
                 Smart Order Management
               </h3>
@@ -144,14 +145,14 @@ export default function Features() {
       </section>
 
       {/* Customer Profiles & Measurements Section */}
-      <section className="w-full bg-[#F7F7F7] py-8">
+      <section data-aos="fade-up" className="w-full bg-[#F7F7F7] py-8">
         <div className="max-w-[1200px] mx-auto px-6">
           
           {/* Two Column Layout - Reversed */}
           <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
             
             {/* Left: Text Content */}
-            <div className="flex flex-col justify-center">
+            <div data-aos="fade-right" className="flex flex-col justify-center">
               <h3 className="font-gelica font-black text-[32px] md:text-[36px] leading-tight text-black mb-4">
                 Customer Profiles & Measurements
               </h3>
@@ -162,7 +163,7 @@ export default function Features() {
             </div>
 
             {/* Right: Mobile Phone Image - Cropped to 80% */}
-            <div className="relative flex items-center justify-center">
+            <div data-aos="fade-left" className="relative flex items-center justify-center">
               <div className="relative w-full max-w-[350px] h-[450px] overflow-hidden">
                 <img
                   src="/images/4.png"
@@ -178,14 +179,14 @@ export default function Features() {
       </section>
 
       {/* Clothing Templates Section */}
-      <section className="w-full bg-white py-8">
+      <section data-aos="fade-up" className="w-full bg-white py-8">
         <div className="max-w-[1200px] mx-auto px-6">
           
           {/* Two Column Layout */}
           <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
             
             {/* Left: Mobile Phone Image - Cropped to 80% */}
-            <div className="relative flex items-center justify-center">
+            <div data-aos="fade-right" className="relative flex items-center justify-center">
               <div className="relative w-full max-w-[350px] h-[450px] overflow-hidden">
                 <img
                   src="/images/2(1).png"
@@ -197,7 +198,7 @@ export default function Features() {
             </div>
 
             {/* Right: Text Content */}
-            <div className="flex flex-col justify-center">
+            <div data-aos="fade-left" className="flex flex-col justify-center">
               <h3 className="font-gelica font-black text-[32px] md:text-[36px] leading-tight text-black mb-4">
                 Clothing Templates
               </h3>
@@ -211,7 +212,7 @@ export default function Features() {
       </section>
 
       {/* More Tools Section */}
-      <section className="w-full bg-[#F7F7F7] py-10">
+      <section data-aos="fade-up" className="w-full bg-[#F7F7F7] py-10">
         <div className="max-w-[1200px] mx-auto px-6">
           
           {/* Section Heading */}
@@ -324,7 +325,7 @@ export default function Features() {
       </section>
 
       {/* ==================== GET STARTED TODAY SECTION ==================== */}
-      <section className="w-full py-16">
+      <section data-aos="fade-up" className="w-full py-16">
         <div className="max-w-[1400px] mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-12">
             
@@ -391,7 +392,7 @@ export default function Features() {
 
 
             {/* ==================== TOP TAILORS SECTION ==================== */}
-            <section className="w-full py-16 bg-[#F7F7F7]">
+            <section data-aos="fade-up" className="w-full py-16 bg-[#F7F7F7]">
         <div className="max-w-[1400px] mx-auto px-6">
           
           {/* Section Heading */}
@@ -458,9 +459,9 @@ export default function Features() {
               </div>
 
               {/* CTA Button */}
-              <button className="px-6 py-3 rounded-[12px] bg-white border-2 border-[#9A54FD] text-[#9A54FD] hover:bg-[#9A54FD] hover:text-white transition font-satoshi text-[15px] font-medium w-fit">
+              <Link href="/contact" className="px-6 py-3 rounded-[12px] bg-white border-2 border-[#9A54FD] text-[#9A54FD] hover:bg-[#9A54FD] hover:text-white transition font-satoshi text-[15px] font-medium w-fit inline-block">
                 Book Now →
-              </button>
+              </Link>
             </div>  
 
           </div>
@@ -468,7 +469,7 @@ export default function Features() {
       </section>
 
       {/* ==================== FAQ SECTION ==================== */}
-      <section className="w-full py-12 bg-white">
+      <section data-aos="fade-up" className="w-full py-12 bg-white">
         <div className="max-w-[900px] mx-auto px-6">
           
           {/* Section Heading */}
@@ -529,7 +530,7 @@ export default function Features() {
         </div>
       </section>
 
-      <section className="relative w-full py-12 overflow-hidden">
+      <section data-aos="fade-up" className="relative w-full py-12 overflow-hidden">
         {/* Background Image with Gradient Overlay */}
         <div className="absolute inset-0">
           <Image
@@ -608,7 +609,7 @@ export default function Features() {
       </section>
 
          {/* ==================== WHAT TAILORS & CUSTOMERS SAY SECTION ==================== */}
-         <section className="w-full py-12 pt-16 bg-white">
+         <section data-aos="fade-up" className="w-full py-12 pt-16 bg-white">
         <div className="max-w-[1400px] mx-auto px-6">
           
           {/* Section Heading */}

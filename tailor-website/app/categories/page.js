@@ -50,7 +50,7 @@ export default function Categories() {
   return (
     <>
       {/* ==================== EXPLORE CATEGORIES SECTION ==================== */}
-      <section className="w-full bg-white py-12 pt-32">
+      <section data-aos="fade-up" className="w-full bg-white py-12 pt-32">
         <div className="max-w-[1200px] mx-auto px-6">
           {/* Section Heading */}
           <div className="text-center mb-12">
@@ -66,10 +66,12 @@ export default function Categories() {
 
           {/* Category Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-10">
-            {categories.map((category) => (
+            {categories.map((category, index) => (
               <Link
                 key={category.id}
                 href={`/categories/${category.slug}`}
+                data-aos="zoom-in"
+                data-aos-delay={index * 100}
                 className="relative group rounded-[20px] overflow-hidden shadow-md cursor-pointer h-[280px] block"
               >
                 {/* Background Image */}

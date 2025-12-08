@@ -53,23 +53,24 @@ export default function Community() {
   ]
 
   return (
-    <section className="w-full bg-white py-12 pt-32">
-      <div className="max-w-[700px] mx-auto px-6">
-        
-        {/* Header */}
-        <div className="mb-8">
-          <h1 className="font-gelica font-black text-[36px] md:text-[42px] leading-tight text-black mb-2">
-            Community Hub
-          </h1>
-          <p className="font-satoshi text-[15px] text-gray-600">
-            Where tailors share work, ideas, and inspiration.
-          </p>
-        </div>
+    <>
+      <section data-aos="fade-up" className="w-full bg-white py-12 pt-32">
+        <div className="max-w-[700px] mx-auto px-6">
+          
+          {/* Header */}
+          <div className="mb-8">
+            <h1 className="font-gelica font-black text-[36px] md:text-[42px] leading-tight text-black mb-2">
+              Community Hub
+            </h1>
+            <p className="font-satoshi text-[15px] text-gray-600">
+              Where tailors share work, ideas, and inspiration.
+            </p>
+          </div>
 
-        {/* Feed */}
-        <div className="space-y-6">
-          {posts.map((post) => (
-            <div key={post.id} className="bg-white border border-gray-200 rounded-[16px] overflow-hidden">
+          {/* Feed */}
+          <div className="space-y-6">
+            {posts.map((post, index) => (
+              <div key={post.id} data-aos="fade-up" data-aos-delay={index * 100} className="bg-white border border-gray-200 rounded-[16px] overflow-hidden">
               
               {/* User Info */}
               <div className="px-4 py-3 flex items-center justify-between border-b border-gray-100">
@@ -150,9 +151,10 @@ export default function Community() {
                 </div>
               </div>
             </div>
-          ))}
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   )
 }

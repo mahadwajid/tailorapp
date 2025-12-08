@@ -37,8 +37,8 @@ export default function Hero() {
         </p>
       </div>
 
-      {/* Hero 1: Top-Left Corner - Cluster of Circles */}
-      <div className="absolute top-8 left-4 sm:top-16 sm:left-8 md:top-24 md:left-16 lg:top-32 lg:left-20 z-10 hidden sm:block">
+      {/* Hero 1: Top-Right Corner - Cluster of Circles */}
+      <div className="absolute top-8 right-4 sm:top-16 sm:right-8 md:top-24 md:right-16 lg:top-120 lg:right-20 z-10 hidden sm:block">
         <Image
           src="/images/Hero1.png"
           alt="Status Indicators"
@@ -49,7 +49,7 @@ export default function Hero() {
       </div>
 
       {/* Hero 2: Bottom-Left */}
-      <div className="absolute bottom-16 left-1/2 -translate-x-1/2 sm:bottom-24 sm:left-auto sm:translate-x-0 sm:right-1/4 md:right-1/3 lg:right-[500px] lg:top-[620px] lg:bottom-auto z-10 hidden sm:block">
+      <div className="absolute bottom-20 left-1/2 -translate-x-1/2 sm:bottom-32 sm:left-auto sm:translate-x-0 sm:right-1/4 md:right-1/3 md:bottom-36 lg:right-[500px] lg:top-[580px] lg:bottom-auto z-10 hidden sm:block">
         <Image
           src="/images/Hero2.png"
           alt="Tailor-Focused"

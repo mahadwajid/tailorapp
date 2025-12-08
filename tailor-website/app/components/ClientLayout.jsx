@@ -1,12 +1,25 @@
 "use client"
 
 import { usePathname } from "next/navigation"
+import { useEffect } from "react"
 import Header from "./Header"
 import Hero from "./Hero"
 
 export default function ClientLayout({ children }) {
   const pathname = usePathname()
   const isHome = pathname === "/"
+
+  useEffect(() => {
+    // Dynamically import AOS only on client side
+    import("aos").then((AOS) => {
+      AOS.init({
+        duration: 800,
+        easing: "ease-in-out",
+        once: true,
+        offset: 100,
+      })
+    })
+  }, [])
 
   return (
     <>

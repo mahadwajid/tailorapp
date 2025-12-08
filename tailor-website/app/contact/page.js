@@ -4,7 +4,7 @@ export default function Contact() {
   return (
     <>
       {/* ==================== HERO SECTION ==================== */}
-      <section className="relative w-full h-[450px] overflow-hidden pt-32">
+      <section data-aos="fade-down" className="relative w-full h-[450px] overflow-hidden pt-32">
         {/* Background Image */}
         <div className="absolute inset-0">
           <Image
@@ -29,7 +29,7 @@ export default function Contact() {
       </section>
 
       {/* ==================== NEED ASSISTANCE SECTION ==================== */}
-      <section className="w-full bg-white py-12">
+      <section data-aos="fade-up" className="w-full bg-white py-12">
         <div className="max-w-[1200px] mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="font-gelica font-black text-[36px] md:text-[42px] leading-tight text-black mb-3">
@@ -44,7 +44,7 @@ export default function Contact() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             
             {/* Left Column - Contact Form */}
-            <div className="bg-white rounded-[20px] p-8 shadow-md">
+            <div data-aos="fade-right" className="bg-white rounded-[20px] p-8 shadow-md">
               <form className="space-y-5">
                 {/* Full Name */}
                 <div>
@@ -93,7 +93,7 @@ export default function Contact() {
             </div>
 
             {/* Right Column - Contact Details */}
-            <div className="bg-white rounded-[20px] p-8 shadow-md">
+            <div data-aos="fade-left" className="bg-white rounded-[20px] p-8 shadow-md">
               <h3 className="font-gelica font-black text-[24px] text-black mb-6">
                 How You Can Reach Us:
               </h3>

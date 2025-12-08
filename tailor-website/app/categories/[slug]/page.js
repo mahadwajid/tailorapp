@@ -132,6 +132,8 @@ export default async function CategoryDetail({ params }) {
             {category.subcategories.map((subcategory, index) => (
               <div
                 key={index}
+                data-aos="zoom-in"
+                data-aos-delay={index * 50}
                 className="relative group rounded-[16px] overflow-hidden shadow-md cursor-pointer aspect-square"
               >
                 {/* Background Image */}

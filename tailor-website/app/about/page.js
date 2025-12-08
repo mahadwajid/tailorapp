@@ -4,7 +4,7 @@ export default function About() {
   return (
     <>
       {/* ==================== HERO SECTION ==================== */}
-      <section className="relative w-full h-[450px] overflow-hidden pt-32">
+      <section data-aos="fade-down" className="relative w-full h-[450px] overflow-hidden pt-32">
         {/* Background Image */}
         <div className="absolute inset-0">
           <Image
@@ -29,12 +29,12 @@ export default function About() {
       </section>
 
       {/* ==================== ABOUT MYTAILOR SECTION ==================== */}
-      <section className="w-full bg-white py-12">
+      <section data-aos="fade-up" className="w-full bg-white py-12">
         <div className="max-w-[1200px] mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
             
             {/* Left Column - Tailor Shop Image */}
-            <div className="relative w-full">
+            <div data-aos="fade-right" className="relative w-full">
               <div className="relative rounded-[16px] overflow-hidden shadow-md aspect-[7/5]">
                 <Image
                   src="/images/about.png"
@@ -47,7 +47,7 @@ export default function About() {
             </div>
 
             {/* Right Column - Text Content */}
-            <div className="flex flex-col justify-center">
+            <div data-aos="fade-left" className="flex flex-col justify-center">
               <h2 className="font-gelica font-black text-[32px] md:text-[36px] leading-tight mb-4">
                 <span className="text-black">About</span>{" "}
                 <span className="text-[#9A54FD]">MyTailor</span>
@@ -76,12 +76,12 @@ export default function About() {
       </section>
 
       {/* ==================== OUR STORY SECTION ==================== */}
-      <section className="w-full bg-[#F7F7F7] py-12">
+      <section data-aos="fade-up" className="w-full bg-[#F7F7F7] py-12">
         <div className="max-w-[1200px] mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
             
             {/* Left Column - Text Content */}
-            <div className="flex flex-col justify-center">
+            <div data-aos="fade-right" className="flex flex-col justify-center">
               <h2 className="font-gelica text-[32px] md:text-[36px] leading-tight text-black mb-5">
                 Our Story
               </h2>
@@ -108,7 +108,7 @@ export default function About() {
             </div>
 
             {/* Right Column - Tailor Workshop Image */}
-            <div className="relative w-full">
+            <div data-aos="fade-left" className="relative w-full">
               <div className="relative rounded-[16px] overflow-hidden shadow-md aspect-[7/5]">
                 <Image
                   src="/images/AB2.png"
