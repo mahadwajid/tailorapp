@@ -44,7 +44,7 @@ export default function Hero() {
           alt="Status Indicators"
           width={80}
           height={70}
-          className="object-contain sm:w-[100px] sm:h-[85px] md:w-[120px] md:h-[100px]"
+          className="object-contain sm:w-[100px] sm:h-[85px] md:w-[120px] md:h-[100px] lg:w-[140px] lg:h-[120px] xl:w-[160px] xl:h-[140px]"
         />
       </div>
 
@@ -55,7 +55,7 @@ export default function Hero() {
           alt="Tailor-Focused"
           width={120}
           height={110}
-          className="object-contain sm:w-[150px] sm:h-[140px] md:w-[180px] md:h-[160px] lg:w-[200px] lg:h-[180px]"
+          className="object-contain sm:w-[150px] sm:h-[140px] md:w-[180px] md:h-[160px] lg:w-[200px] lg:h-[180px] xl:w-[220px] xl:h-[200px]"
         />
       </div> 
 
@@ -66,7 +66,7 @@ export default function Hero() {
           alt="Reliable & Secure"
           width={70}
           height={85}
-          className="object-contain md:w-[85px] md:h-[100px] lg:w-[100px] lg:h-[120px]"
+          className="object-contain md:w-[85px] md:h-[100px] lg:w-[100px] lg:h-[120px] xl:w-[110px] xl:h-[130px]"
         />
       </div>
 
@@ -77,7 +77,7 @@ export default function Hero() {
           alt="Reliable & Secure"
           width={190}
           height={280}
-          className="object-contain md:w-[130px] md:h-[150px] lg:w-[190px] lg:h-[180px]"
+          className="object-contain md:w-[130px] md:h-[150px] lg:w-[190px] lg:h-[180px] xl:w-[210px] xl:h-[200px]"
         />
       </div>
 

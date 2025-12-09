@@ -7,17 +7,17 @@ export default function Home() {
 
       {/* Why Choose Us Section */}
       <section data-aos="fade-up" className="w-full max-w-[1200px] mx-auto mt-12 sm:mt-16 md:mt-20 lg:mt-[100px] px-4 sm:px-6 py-6 sm:py-8 bg-white rounded-[8px]">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 md:gap-8">
 
           {/* Left Title */}
-          <div data-aos="fade-right" className="col-span-1 md:col-span-1">
+          <div data-aos="fade-right" className="col-span-1 lg:col-span-1">
             <h2 className="font-gelica font-black text-[32px] sm:text-[36px] md:text-[40px] lg:text-[42px] leading-tight text-black">
-              Why <br /> Choose Us
+              Why <br className="hidden lg:block" /> Choose Us
             </h2>
           </div>
 
           {/* Features */}
-          <div className="col-span-1 md:col-span-3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+          <div className="col-span-1 lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
 
             {/* Feature 1 */}
             <div data-aos="fade-up" data-aos-delay="100" className="flex flex-col gap-2 sm:gap-2.5">
