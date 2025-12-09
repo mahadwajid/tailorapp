@@ -262,15 +262,17 @@ export default function Home() {
               one fast and organized app.
             </p>
 
-            {/* Cropped Mobile Image */}
-            <div className="mt-6 sm:mt-8 md:mt-10 w-[200px] sm:w-[240px] md:w-[260px] lg:w-[300px] h-[320px] sm:h-[380px] md:h-[420px] overflow-hidden">
-              <Image
-                src="/images/3.png"
-                width={300}
-                height={600}
-                alt="Tailor App"
-                className="object-cover pointer-events-none select-none w-full h-full"
-              />
+            {/* Mobile Image - Centered and Properly Displayed */}
+            <div className="mt-6 sm:mt-8 md:mt-10 w-full flex items-center justify-center">
+              <div className="relative w-[200px] sm:w-[240px] md:w-[280px] lg:w-[320px] aspect-[9/16] flex items-center justify-center">
+                <Image
+                  src="/images/3.png"
+                  width={300}
+                  height={600}
+                  alt="Tailor App"
+                  className="object-contain pointer-events-none select-none w-full h-full"
+                />
+              </div>
             </div>
           </div>
 
@@ -294,15 +296,17 @@ export default function Home() {
               and get delivery updates without calls.
             </p>
 
-            {/* Cropped Mobile Image */}
-            <div className="mt-6 sm:mt-8 md:mt-10 w-[200px] sm:w-[240px] md:w-[260px] lg:w-[300px] h-[320px] sm:h-[380px] md:h-[420px] overflow-hidden">
-              <Image
-                src="/images/4.png"
-                width={300}
-                height={600}
-                alt="Customer App"
-                className="object-cover pointer-events-none select-none w-full h-full"
-              />
+            {/* Mobile Image - Centered and Properly Displayed */}
+            <div className="mt-6 sm:mt-8 md:mt-10 w-full flex items-center justify-center">
+              <div className="relative w-[200px] sm:w-[240px] md:w-[280px] lg:w-[320px] aspect-[9/16] flex items-center justify-center">
+                <Image
+                  src="/images/4.png"
+                  width={300}
+                  height={600}
+                  alt="Customer App"
+                  className="object-contain pointer-events-none select-none w-full h-full"
+                />
+              </div>
             </div>
           </div>
 
@@ -327,8 +331,7 @@ export default function Home() {
               className="rounded-[16px] sm:rounded-[20px] md:rounded-l-none md:rounded-r-[20px] object-cover w-full h-[250px] sm:h-[300px] md:h-[400px] lg:h-full"
             />
 
-            {/* Background shape behind image (Figma-style) */}
-            <div className="absolute -z-10 -right-14 top-10 w-[300px] h-[260px] bg-[#F0EEF9] rounded-[40px] hidden md:block"></div>
+           
           </div>
 
           {/* ===== Right Content ===== */}

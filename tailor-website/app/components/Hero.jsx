@@ -38,7 +38,7 @@ export default function Hero() {
       </div>
 
       {/* Hero 1: Top-Right Corner - Cluster of Circles */}
-      <div className="absolute top-8 right-4 sm:top-16 sm:right-8 md:top-24 md:right-16 lg:top-120 lg:right-20 z-10 hidden sm:block">
+      <div data-aos="fade-down" data-aos-delay="100" data-aos-duration="800" className="absolute top-8 right-4 sm:top-16 sm:right-8 md:top-24 md:right-16 lg:top-120 lg:right-20 z-10 hidden sm:block">
         <Image
           src="/images/Hero1.png"
           alt="Status Indicators"
@@ -49,7 +49,7 @@ export default function Hero() {
       </div>
 
       {/* Hero 2: Bottom-Left */}
-      <div className="absolute bottom-20 left-1/2 -translate-x-1/2 sm:bottom-32 sm:left-auto sm:translate-x-0 sm:right-1/4 md:right-1/3 md:bottom-36 lg:right-[500px] lg:top-[580px] lg:bottom-auto z-10 hidden sm:block">
+      <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="800" className="absolute bottom-20 left-1/2 -translate-x-1/2 sm:bottom-32 sm:left-auto sm:translate-x-0 sm:right-1/4 md:right-1/3 md:bottom-36 lg:right-[500px] lg:top-[580px] lg:bottom-auto z-10 hidden sm:block">
         <Image
           src="/images/Hero2.png"
           alt="Tailor-Focused"
@@ -60,13 +60,24 @@ export default function Hero() {
       </div> 
 
       {/* Hero 3: Bottom-Center-Right - Reliable & Secure Badge */}
-      <div className="absolute bottom-8 right-4 sm:bottom-16 sm:right-8 md:bottom-24 md:right-16 lg:bottom-[200px] lg:right-[1150px] z-10 hidden md:block">
+      <div data-aos="zoom-in" data-aos-delay="300" data-aos-duration="800" className="absolute bottom-8 right-4 sm:bottom-16 sm:right-8 md:bottom-24 md:right-16 lg:bottom-[200px] lg:right-[1150px] z-10 hidden md:block">
         <Image
           src="/images/Hero3.png"
           alt="Reliable & Secure"
           width={70}
           height={85}
           className="object-contain md:w-[85px] md:h-[100px] lg:w-[100px] lg:h-[120px]"
+        />
+      </div>
+
+         {/* Hero 4: Top-Left Corner - Reliable & Secure Badge */}
+         <div data-aos="fade-down" data-aos-delay="400" data-aos-duration="800" className="absolute top-8 left-4 sm:top-16 sm:left-8 md:top-24 md:left-16 lg:top-154 lg:left-45 z-10 hidden md:block">
+        <Image
+          src="/images/Hero4.png"
+          alt="Reliable & Secure"
+          width={190}
+          height={280}
+          className="object-contain md:w-[130px] md:h-[150px] lg:w-[190px] lg:h-[180px]"
         />
       </div>
 

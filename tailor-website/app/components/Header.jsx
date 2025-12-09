@@ -55,14 +55,14 @@ export default function Header() {
           alt="TailorCraft Logo"
           width={60}
           height={22}
-          className="object-contain sm:w-[70px] sm:h-[26px] lg:w-[80px] lg:h-[30px]"
+          className="object-contain sm:w-[70px] sm:h-[26px] lg:w-[80px] lg:h-[50px]"
         />
       </div>
 
       {/* Mobile Menu Button */}
       <button
         onClick={() => setIsMenuOpen(!isMenuOpen)}
-        className="lg:hidden z-20 flex flex-col gap-1.5 p-2"
+        className="lg:hidden z-20 flex flex-col gap-1.5 p-3"
         aria-label="Toggle menu"
       >
         <span className={`w-6 h-0.5 bg-[#666666] transition-all duration-300 ${isMenuOpen ? 'rotate-45 translate-y-2' : ''}`}></span>
@@ -107,16 +107,16 @@ export default function Header() {
           text-[#9A54FD]
           border
           border-[#9A54FD]
-          px-4
-          xl:px-6
-          py-1.5
-          xl:py-2
+          px-5
+          xl:px-7
+          py-2
+          xl:py-2.5
           rounded-full
           hover:opacity-80
           transition
           font-satoshi
-          text-[12px]
-          xl:text-[14px]
+          text-[13px]
+          xl:text-[15px]
           whitespace-nowrap
         "
       >
@@ -150,7 +150,7 @@ export default function Header() {
           {/* Close Button */}
           <button
             onClick={() => setIsMenuOpen(false)}
-            className="absolute top-4 right-4 p-2"
+            className="absolute top-4 right-4 p-3"
             aria-label="Close menu"
           >
             <span className="w-6 h-0.5 bg-[#666666] block rotate-45"></span>
@@ -192,14 +192,14 @@ export default function Header() {
               text-[#9A54FD]
               border-2
               border-[#9A54FD]
-              px-6
-              py-3
+              px-8
+              py-4
               rounded-full
               hover:bg-[#9A54FD]
               hover:text-white
               transition
               font-satoshi
-              text-[14px]
+              text-[15px]
               font-medium
               text-center
             "
