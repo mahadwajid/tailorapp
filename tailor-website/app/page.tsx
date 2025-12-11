@@ -6,11 +6,11 @@ export default function Home() {
     <>
 
       {/* Why Choose Us Section */}
-      <section data-aos="fade-up" className="w-full max-w-[1200px] mx-auto mt-12 sm:mt-16 md:mt-20 lg:mt-[100px] px-4 sm:px-6 py-6 sm:py-8 bg-white rounded-[8px]">
+      <section className="w-full max-w-[1200px] mx-auto mt-12 sm:mt-16 md:mt-20 lg:mt-[100px] px-4 sm:px-6 py-6 sm:py-8 bg-white rounded-[8px]">
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 md:gap-8">
 
           {/* Left Title */}
-          <div data-aos="fade-right" className="col-span-1 lg:col-span-1">
+          <div className="col-span-1 lg:col-span-1">
             <h2 className="font-gelica font-black text-[32px] sm:text-[36px] md:text-[40px] lg:text-[42px] leading-tight text-black">
               Why <br className="hidden lg:block" /> Choose Us
             </h2>
@@ -30,14 +30,14 @@ export default function Home() {
                 orders, measurements, and customers without any tech stress.
               </p>
 
-              <a href="#" className="font-satoshi text-[13px] sm:text-[14px] text-[#6B57FF] flex items-center gap-2 mt-1 hover:opacity-80 transition">
+              <a href="#" className="font-satoshi text-[13px] sm:text-[14px] text-[#6B57FF] flex items-center gap-2 mt-1">
                 More Info
                 <span className="text-[14px] sm:text-[16px]">→</span>
               </a>
             </div>
 
             {/* Feature 2 */}
-            <div data-aos="fade-up" data-aos-delay="200" className="flex flex-col gap-2 sm:gap-2.5">
+            <div className="flex flex-col gap-2 sm:gap-2.5">
               <h3 className="font-gelica font-black text-[18px] sm:text-[20px] lg:text-[22px] text-black">
                 Time Saver
               </h3>
@@ -47,7 +47,7 @@ export default function Home() {
                 so you can serve customers faster and reduce waiting time.
               </p>
 
-              <a href="#" className="font-satoshi text-[13px] sm:text-[14px] text-[#6B57FF] flex items-center gap-2 mt-1 hover:opacity-80 transition">
+              <a href="#" className="font-satoshi text-[13px] sm:text-[14px] text-[#6B57FF] flex items-center gap-2 mt-1">
                 More Info
                 <span className="text-[14px] sm:text-[16px]">→</span>
               </a>
@@ -64,7 +64,7 @@ export default function Home() {
                 it easy to access anytime while keeping your business information secure.
               </p>
 
-              <a href="#" className="font-satoshi text-[13px] sm:text-[14px] text-[#6B57FF] flex items-center gap-2 mt-1 hover:opacity-80 transition">
+              <a href="#" className="font-satoshi text-[13px] sm:text-[14px] text-[#6B57FF] flex items-center gap-2 mt-1">
                 More Info
                 <span className="text-[14px] sm:text-[16px]">→</span>
               </a>
@@ -75,10 +75,10 @@ export default function Home() {
       </section>
 
       {/* Explore Categories Section */}
-      <section data-aos="fade-up" className="w-full mt-0 bg-[#F7F7F7] py-8 sm:py-10">
+      <section className="w-full mt-0 bg-[#F7F7F7] py-8 sm:py-10">
         <div className="max-w-[1200px] mx-auto px-4 sm:px-6">
           {/* Section Heading */}
-          <div data-aos="fade-down" className="text-center mb-8 sm:mb-12 md:mb-[60px] mt-6 sm:mt-8 md:mt-10">
+          <div className="text-center mb-8 sm:mb-12 md:mb-[60px] mt-6 sm:mt-8 md:mt-10">
             <h2 className="font-gelica font-black text-[28px] sm:text-[34px] md:text-[38px] lg:text-[42px] text-black mb-3">
               Explore <span className="bg-gradient-to-r from-[#FF6F61] to-[#9A54FD] bg-clip-text text-transparent">Categories</span>
             </h2>
@@ -90,7 +90,7 @@ export default function Home() {
 
             <a
               href="/categories"
-              className="inline-block px-5 sm:px-6 py-2.5 sm:py-3 rounded-full bg-white border-2 border-[#9A54FD] text-[#9A54FD] hover:bg-[#9A54FD] hover:text-white transition font-satoshi text-[13px] sm:text-[14px] md:text-[15px] font-medium"
+              className="inline-block px-5 sm:px-6 py-2.5 sm:py-3 rounded-full bg-white border-2 border-[#9A54FD] text-[#9A54FD] hover:bg-[#9A54FD] hover:text-white font-satoshi text-[13px] sm:text-[14px] md:text-[15px] font-medium"
             >
               View All Categories →
             </a>
@@ -101,7 +101,7 @@ export default function Home() {
 
             {/* Men's Clothing */}
             <a href="/categories" className="relative group rounded-[16px] sm:rounded-[20px] overflow-hidden shadow-md cursor-pointer block">
-              <img src="/images/Mens Clothing.png" className="w-full h-[200px] sm:h-[220px] md:h-[230px] object-cover group-hover:scale-105 transition" />
+              <img src="/images/Mens Clothing.png" className="w-full h-[200px] sm:h-[220px] md:h-[230px] object-cover" />
               <div className="absolute bottom-3 sm:bottom-4 left-3 sm:left-4 text-white">
                 <h3 className="font-gelica font-black text-[16px] sm:text-[18px] md:text-[20px]">Men's Clothing</h3>
                 <p className="font-satoshi text-[12px] sm:text-[13px] md:text-[14px] text-gray-200">Shirts, pants, suits</p>
@@ -137,7 +137,7 @@ export default function Home() {
 
             {/* Accessories */}
             <a href="/categories" className="relative group rounded-[16px] sm:rounded-[20px] overflow-hidden shadow-md cursor-pointer block">
-              <img src="/images/Mens Clothing.png" className="w-full h-[200px] sm:h-[220px] md:h-[230px] object-cover group-hover:scale-105 transition" />
+              <img src="/images/Mens Clothing.png" className="w-full h-[200px] sm:h-[220px] md:h-[230px] object-cover" />
               <div className="absolute bottom-3 sm:bottom-4 left-3 sm:left-4 text-white">
                 <h3 className="font-gelica font-black text-[16px] sm:text-[18px] md:text-[20px]">Accessories</h3>
                 <p className="font-satoshi text-[12px] sm:text-[13px] md:text-[14px] text-gray-200">Scarves, ties, belts</p>
@@ -167,7 +167,7 @@ export default function Home() {
                 <p className="font-satoshi text-[12px] sm:text-[13px] md:text-[14px] text-gray-200">A platform suitable for all</p>
               </div>
 
-              <div className="absolute right-4 sm:right-6 top-4 sm:top-6 z-10 text-white text-[20px] sm:text-[24px] group-hover:translate-x-1 transition">
+              <div className="absolute right-4 sm:right-6 top-4 sm:top-6 z-10 text-white text-[20px] sm:text-[24px]">
                 →
               </div>
             </a>
@@ -177,11 +177,11 @@ export default function Home() {
       </section>
 
       {/* ================= HERO SECTION ================= */}
-      <section data-aos="fade-up" className="w-full py-8 sm:py-10 mt-6 sm:mt-8 md:mt-10">
+      <section className="w-full py-8 sm:py-10 mt-6 sm:mt-8 md:mt-10">
         <div className="max-w-[1200px] mx-auto px-4 sm:px-6 grid grid-cols-1 md:grid-cols-2 items-center gap-8 sm:gap-10">
 
           {/* ---------- LEFT CONTENT ---------- */}
-          <div data-aos="fade-right">
+          <div>
             <h1 className="font-gelica font-black text-[28px] sm:text-[36px] md:text-[42px] lg:text-[48px] xl:text-[54px] leading-[1.2] text-black">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF6F61] to-[#9A54FD]">
                 All-in-one
@@ -200,7 +200,7 @@ export default function Home() {
               href="https://play.google.com/store/apps/details?id=com.tailorbhai&hl=en&pli=1"
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-6 sm:mt-8 px-5 sm:px-6 py-2.5 sm:py-3 rounded-full border border-[#9A54FD] text-[#9A54FD] hover:bg-[#9A54FD] hover:text-white transition font-satoshi inline-block text-[13px] sm:text-[14px] md:text-[15px]"
+              className="mt-6 sm:mt-8 px-5 sm:px-6 py-2.5 sm:py-3 rounded-full border border-[#9A54FD] text-[#9A54FD] hover:bg-[#9A54FD] hover:text-white font-satoshi inline-block text-[13px] sm:text-[14px] md:text-[15px]"
             >
               Get the App Now →
             </a>
@@ -208,7 +208,7 @@ export default function Home() {
 
 
           {/* ---------- RIGHT IMAGE (cropped) ---------- */}
-          <div data-aos="fade-left" className="relative flex justify-center md:justify-end md:-mr-[182px] h-[300px] sm:h-[380px] md:h-[460px] overflow-hidden">
+          <div className="relative flex justify-center md:justify-end md:-mr-[182px] h-[300px] sm:h-[380px] md:h-[460px] overflow-hidden">
 
             <Image
               src="/images/Full Mobile 2.png"
@@ -224,9 +224,9 @@ export default function Home() {
       </section>
 
 
-      <section data-aos="fade-up" className="w-full py-12 sm:py-16 md:py-20 lg:py-24 bg-[#F7F7F7]">
+      <section className="w-full py-12 sm:py-16 md:py-20 lg:py-24 bg-[#F7F7F7]">
         {/* --------- Section Heading --------- */}
-        <div data-aos="fade-down" className="text-center max-w-[800px] mx-auto px-4 sm:px-6">
+        <div className="text-center max-w-[800px] mx-auto px-4 sm:px-6">
           <h2 className="font-gelica font-black text-[28px] sm:text-[32px] md:text-[40px] lg:text-[48px] leading-tight text-black">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF6F61] to-[#9A54FD]">
               Connected
@@ -278,7 +278,7 @@ export default function Home() {
 
 
           {/* --------- Customer Card --------- */}
-          <div data-aos="flip-right" data-aos-delay="200" className="bg-[#FFE1E0] rounded-[20px] sm:rounded-[24px] p-6 sm:p-8 md:p-10 flex flex-col items-center text-center relative overflow-hidden">
+          <div className="bg-[#FFE1E0] rounded-[20px] sm:rounded-[24px] p-6 sm:p-8 md:p-10 flex flex-col items-center text-center relative overflow-hidden">
 
             {/* Badge */}
             <div className="px-3 sm:px-4 py-1 bg-white/60 rounded-full border border-white/70 backdrop-blur-sm mb-4 sm:mb-6">
@@ -335,7 +335,7 @@ export default function Home() {
           </div>
 
           {/* ===== Right Content ===== */}
-          <div data-aos="fade-left" className="px-4 sm:px-6 md:px-12 lg:px-16 py-6 md:py-0">
+          <div className="px-4 sm:px-6 md:px-12 lg:px-16 py-6 md:py-0">
 
             {/* Category Badge */}
             <div className="mb-3 sm:mb-4">
@@ -372,11 +372,11 @@ export default function Home() {
       </section>
 
      {/* ==================== CRAFTED FOR TAILORS SECTION ==================== */}
-       <section data-aos="fade-up" className="w-full py-12 sm:py-16 md:py-20 lg:py-28 bg-white">
+       <section className="w-full py-12 sm:py-16 md:py-20 lg:py-28 bg-white">
          <div className="max-w-[1400px] mx-auto pl-4 sm:pl-6 pr-4 sm:pr-0 grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 md:gap-16">
 
            {/* ===== Left Content ===== */}
-           <div data-aos="fade-right" className="flex flex-col justify-center">
+           <div className="flex flex-col justify-center">
 
             {/* Category Badge */}
             <span className="font-satoshi text-[11px] sm:text-[12px] tracking-[2px] uppercase text-[#9A54FD] mb-3 sm:mb-4">
@@ -402,7 +402,7 @@ export default function Home() {
             {/* CTA */}
             <a
               href="#"
-              className="font-satoshi text-[14px] sm:text-[15px] md:text-[16px] text-[#9A54FD] flex items-center gap-2 mt-6 sm:mt-8 hover:opacity-80 transition"
+              className="font-satoshi text-[14px] sm:text-[15px] md:text-[16px] text-[#9A54FD] flex items-center gap-2 mt-6 sm:mt-8"
             >
               More Info
               <span className="text-[16px] sm:text-[18px]">→</span>
@@ -425,11 +425,11 @@ export default function Home() {
       </section>
 
       {/* ==================== DETAILED CUSTOMER INSIGHTS SECTION ==================== */}
-      <section data-aos="fade-up" className="w-full py-12 sm:py-16 md:py-20 lg:py-24 bg-[#F7F7F7]">
+      <section className="w-full py-12 sm:py-16 md:py-20 lg:py-24 bg-[#F7F7F7]">
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 grid grid-cols-1 md:grid-cols-2 items-center gap-8 sm:gap-12 md:gap-16">
           
           {/* ===== Left: Mobile Phones Image - Cropped 20% from bottom ===== */}
-          <div data-aos="fade-right" className="relative flex items-start justify-center h-[400px] sm:h-[500px] md:h-[600px]">
+          <div className="relative flex items-start justify-center h-[400px] sm:h-[500px] md:h-[600px]">
             <div className="relative w-full flex items-center justify-center">
               <div className="relative w-full max-w-[500px] h-[400px] sm:h-[500px] overflow-hidden">
                 <Image
@@ -463,7 +463,7 @@ export default function Home() {
               href="https://play.google.com/store/apps/details?id=com.tailorbhai&hl=en&pli=1"
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-6 sm:mt-8 px-6 sm:px-8 py-3 sm:py-4 rounded-full bg-white border-2 border-[#9A54FD] text-[#9A54FD] hover:bg-[#9A54FD] hover:text-white transition font-satoshi text-[14px] sm:text-[15px] md:text-[16px] font-medium w-fit inline-block"
+              className="mt-6 sm:mt-8 px-6 sm:px-8 py-3 sm:py-4 rounded-full bg-white border-2 border-[#9A54FD] text-[#9A54FD] hover:bg-[#9A54FD] hover:text-white font-satoshi text-[14px] sm:text-[15px] md:text-[16px] font-medium w-fit inline-block"
             >
               Get the App Now →
             </a>
@@ -473,11 +473,11 @@ export default function Home() {
       </section>
 
       {/* ==================== TOP TAILORS SECTION ==================== */}
-      <section data-aos="fade-up" className="w-full py-10 sm:py-12 md:py-16 bg-white">
+      <section className="w-full py-10 sm:py-12 md:py-16 bg-white">
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6">
           
           {/* Section Heading */}
-          <div data-aos="fade-down" className="text-center mb-6 sm:mb-8 md:mb-10">
+          <div className="text-center mb-6 sm:mb-8 md:mb-10">
             <h2 className="font-gelica font-black text-[28px] sm:text-[32px] md:text-[36px] lg:text-[42px] leading-tight text-black mb-2">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF6F61] to-[#9A54FD]">
                 Top Tailors
@@ -493,20 +493,33 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-6 sm:gap-8 lg:gap-12">
 
             {/* Left Column - Tailor Image */}
-            <div data-aos="fade-right" className="relative w-full flex items-center justify-center">
-              <div className="relative w-full max-w-[450px] rounded-[16px] sm:rounded-[20px] overflow-hidden">
-                <Image
-                  src="/images/tailor.png"
-                  alt="Ahmed Ali - Professional Tailor"
-                  width={450}
-                  height={550}
-                  className="object-cover w-full h-auto"
-                />
+            <div className="relative w-full flex items-center justify-center">
+              <div className="relative w-full max-w-[450px]">
+                {/* Background Ellipse - positioned behind and larger */}
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[140%] h-[140%] z-0">
+                  <Image
+                    src="/images/Ellipse 1412.png"
+                    alt="Background Gradient"
+                    width={600}
+                    height={600}
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                {/* Tailor Image Container */}
+                <div className="relative rounded-[16px] sm:rounded-[20px] overflow-hidden z-10">
+                  <Image
+                    src="/images/tailor.png"
+                    alt="Ahmed Ali - Professional Tailor"
+                    width={450}
+                    height={550}
+                    className="object-cover w-full h-auto"
+                  />
+                </div>
               </div>
             </div>
 
             {/* Right Column - Profile Content */}
-            <div data-aos="fade-left" className="flex flex-col justify-center">
+            <div className="flex flex-col justify-center">
 
               {/* Name */}
               <h3 className="font-gelica font-black text-[28px] sm:text-[32px] md:text-[36px] lg:text-[40px] leading-tight text-black mb-2">
@@ -540,7 +553,7 @@ export default function Home() {
               </div>
 
               {/* CTA Button */}
-              <Link href="/contact" className="px-6 py-3 rounded-[12px] bg-white border-2 border-[#9A54FD] text-[#9A54FD] hover:bg-[#9A54FD] hover:text-white transition font-satoshi text-[15px] font-medium w-fit inline-block">
+              <Link href="/contact" className="px-6 py-3 rounded-[12px] bg-white border-2 border-[#9A54FD] text-[#9A54FD] hover:bg-[#9A54FD] hover:text-white font-satoshi text-[15px] font-medium w-fit inline-block">
                 Book Now →
               </Link>
             </div>
@@ -668,7 +681,7 @@ export default function Home() {
                 href="https://play.google.com/store/apps/details?id=com.tailorbhai&hl=en&pli=1"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-5 py-2.5 rounded-full bg-white border-2 border-[#9A54FD] text-[#9A54FD] hover:bg-[#9A54FD] hover:text-white transition font-satoshi text-[14px] font-medium w-fit inline-block"
+                className="px-5 py-2.5 rounded-full bg-white border-2 border-[#9A54FD] text-[#9A54FD] hover:bg-[#9A54FD] hover:text-white font-satoshi text-[14px] font-medium w-fit inline-block"
               >
                 Get the App Now →
               </a>
@@ -696,7 +709,7 @@ export default function Home() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
 
             {/* Card 1: Image Card */}
-            <div data-aos="zoom-in" data-aos-delay="100" className="relative rounded-[16px] sm:rounded-[20px] overflow-hidden max-w-[320px] mx-auto sm:mx-0 w-full">
+            <div className="relative rounded-[16px] sm:rounded-[20px] overflow-hidden max-w-[320px] mx-auto sm:mx-0 w-full">
               <Image
                 src="/images/Feedback1.png"
                 alt="Customer Review"
@@ -759,7 +772,7 @@ export default function Home() {
             </div>
 
             {/* Card 3: Text Review with Background */}
-            <div data-aos="zoom-in" data-aos-delay="300" className="relative rounded-[16px] sm:rounded-[20px] overflow-visible h-[350px] sm:h-[400px] md:h-[450px] max-w-[320px] mx-auto sm:mx-0 w-full">
+            <div className="relative rounded-[16px] sm:rounded-[20px] overflow-visible h-[350px] sm:h-[400px] md:h-[450px] max-w-[320px] mx-auto sm:mx-0 w-full">
               {/* Background Image */}
               <div className="absolute inset-0 rounded-[16px] sm:rounded-[20px] overflow-hidden">
                 <Image
@@ -815,12 +828,12 @@ export default function Home() {
       </section>
 
        {/* ==================== GET STARTED TODAY SECTION ==================== */}
-       <section data-aos="fade-up" className="w-full py-10 sm:py-12 md:py-16">
+       <section className="w-full py-10 sm:py-12 md:py-16">
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8 sm:gap-10 md:gap-12">
             
             {/* Left Side - Text Content & Buttons */}
-            <div data-aos="fade-right" className="flex flex-col">
+            <div className="flex flex-col">
               {/* Heading */}
               <h2 className="font-gelica font-black text-[28px] sm:text-[32px] md:text-[36px] lg:text-[42px] leading-tight text-black mb-3 sm:mb-4">
                 Get Started Today{" "}
@@ -841,7 +854,7 @@ export default function Home() {
                   href="https://play.google.com/store/apps/details?id=com.tailorbhai&hl=en&pli=1"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-5 sm:px-6 py-2.5 sm:py-3 rounded-full bg-white border-2 border-[#9A54FD] text-[#9A54FD] hover:bg-[#9A54FD] hover:text-white transition font-satoshi text-[13px] sm:text-[14px] md:text-[15px] font-medium flex items-center justify-center gap-2"
+                  className="px-5 sm:px-6 py-2.5 sm:py-3 rounded-full bg-white border-2 border-[#9A54FD] text-[#9A54FD] hover:bg-[#9A54FD] hover:text-white font-satoshi text-[13px] sm:text-[14px] md:text-[15px] font-medium flex items-center justify-center gap-2"
                 >
                   Download for Tailors →
                 </a>
@@ -851,7 +864,7 @@ export default function Home() {
                   href="https://play.google.com/store/apps/details?id=com.tailorbhai&hl=en&pli=1"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-5 sm:px-6 py-2.5 sm:py-3 rounded-full bg-white border-2 border-[#FF6F61] text-[#FF6F61] hover:bg-[#FF6F61] hover:text-white transition font-satoshi text-[13px] sm:text-[14px] md:text-[15px] font-medium flex items-center justify-center gap-2"
+                  className="px-5 sm:px-6 py-2.5 sm:py-3 rounded-full bg-white border-2 border-[#FF6F61] text-[#FF6F61] hover:bg-[#FF6F61] hover:text-white font-satoshi text-[13px] sm:text-[14px] md:text-[15px] font-medium flex items-center justify-center gap-2"
                 >
                   Download for Customers →
                 </a>
@@ -859,7 +872,7 @@ export default function Home() {
             </div>
 
             {/* Right Side - QR Code & App Store Badges */}
-            <div data-aos="fade-left" className="flex flex-col items-center md:items-end gap-3 sm:gap-4 md:gap-2 lg:gap-3">
+            <div className="flex flex-col items-center md:items-end gap-3 sm:gap-4 md:gap-2 lg:gap-3">
               {/* QR Code */}
               <div className="p-2 sm:p-3 md:p-3 lg:p-4 bg-white rounded-lg sm:rounded-xl self-center md:self-end md:translate-x-[-40px]">
                 <div className="w-[140px] h-[140px] sm:w-[160px] sm:h-[160px] md:w-[180px] md:h-[180px] lg:w-[200px] lg:h-[200px] flex items-center justify-center">
@@ -880,7 +893,7 @@ export default function Home() {
                   href="https://play.google.com/store/apps/details?id=com.tailorbhai&hl=en&pli=1"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-black hover:bg-gray-800 transition rounded-md sm:rounded-lg px-2.5 sm:px-3 md:px-3 lg:px-4 py-1.5 sm:py-2 md:py-2 lg:py-2.5 flex items-center gap-1.5 sm:gap-2 md:gap-2 min-w-[120px] sm:min-w-[130px] md:min-w-[140px] lg:min-w-[150px]"
+                  className="bg-black hover:bg-gray-800 rounded-md sm:rounded-lg px-2.5 sm:px-3 md:px-3 lg:px-4 py-1.5 sm:py-2 md:py-2 lg:py-2.5 flex items-center gap-1.5 sm:gap-2 md:gap-2 min-w-[120px] sm:min-w-[130px] md:min-w-[140px] lg:min-w-[150px]"
                 >
                   <svg className="w-4 h-4 sm:w-5 sm:h-5 md:w-5 md:h-5 lg:w-6 lg:h-6 flex-shrink-0" viewBox="0 0 24 24" fill="none">
                     <path d="M3 20.5V3.5C3 2.91 3.34 2.39 3.84 2.15L13.69 12L3.84 21.85C3.34 21.61 3 21.09 3 20.5Z" fill="#00D9FF"/>
@@ -899,7 +912,7 @@ export default function Home() {
                   href="https://play.google.com/store/apps/details?id=com.tailorbhai&hl=en&pli=1"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-black hover:bg-gray-800 transition rounded-md sm:rounded-lg px-2.5 sm:px-3 md:px-3 lg:px-4 py-1.5 sm:py-2 md:py-2 lg:py-2.5 flex items-center gap-1.5 sm:gap-2 md:gap-2 min-w-[120px] sm:min-w-[130px] md:min-w-[140px] lg:min-w-[150px]"
+                  className="bg-black hover:bg-gray-800 rounded-md sm:rounded-lg px-2.5 sm:px-3 md:px-3 lg:px-4 py-1.5 sm:py-2 md:py-2 lg:py-2.5 flex items-center gap-1.5 sm:gap-2 md:gap-2 min-w-[120px] sm:min-w-[130px] md:min-w-[140px] lg:min-w-[150px]"
                 >
                   <svg className="w-4 h-4 sm:w-5 sm:h-5 md:w-5 md:h-5 lg:w-6 lg:h-6 flex-shrink-0" viewBox="0 0 24 24" fill="white">
                     <path d="M17.05 20.28c-.98.95-2.05.88-3.08.4-1.09-.5-2.08-.48-3.24 0-1.44.62-2.2.44-3.06-.4C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/>

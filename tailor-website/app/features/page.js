@@ -432,64 +432,76 @@ export default function Features() {
       </section>
 
 
-            {/* ==================== TOP TAILORS SECTION ==================== */}
-            <section data-aos="fade-up" className="w-full py-16 bg-[#F7F7F7]">
-        <div className="max-w-[1400px] mx-auto px-6">
+      <section className="w-full py-10 sm:py-12 md:py-16 bg-white">
+        <div className="max-w-[1400px] mx-auto px-4 sm:px-6">
           
           {/* Section Heading */}
-          <div className="text-center mb-10">
-            <h2 className="font-gelica font-black text-[36px] md:text-[42px] leading-tight text-black mb-2">
+          <div className="text-center mb-6 sm:mb-8 md:mb-10">
+            <h2 className="font-gelica font-black text-[28px] sm:text-[32px] md:text-[36px] lg:text-[42px] leading-tight text-black mb-2">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF6F61] to-[#9A54FD]">
                 Top Tailors
               </span>{" "}
               You Can Trust
             </h2>
-            <p className="font-satoshi text-[16px] text-gray-600 max-w-[780px] mx-auto leading-[1.6]">
+            <p className="font-satoshi text-[14px] sm:text-[15px] md:text-[16px] text-gray-600 max-w-[780px] mx-auto leading-[1.6] px-4">
               Easily manage and browse orders for every type of clothing. From men's shirts to women's dresses, we've got it organized
             </p>
           </div>
 
           {/* Main Content - Two Columns */}
-          <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8 lg:gap-12">
-            
+          <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-6 sm:gap-8 lg:gap-12">
+
             {/* Left Column - Tailor Image */}
             <div className="relative w-full flex items-center justify-center">
-              <div className="relative w-full max-w-[450px] rounded-[20px] overflow-hidden">
-                <Image
-                  src="/images/tailor.png"
-                  alt="Ahmed Ali - Professional Tailor"
-                  width={450}
-                  height={550}
-                  className="object-cover w-full h-auto"
-                />
+              <div className="relative w-full max-w-[450px]">
+                {/* Background Ellipse - positioned behind and larger */}
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[140%] h-[140%] z-0">
+                  <Image
+                    src="/images/Ellipse 1412.png"
+                    alt="Background Gradient"
+                    width={600}
+                    height={600}
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                {/* Tailor Image Container */}
+                <div className="relative rounded-[16px] sm:rounded-[20px] overflow-hidden z-10">
+                  <Image
+                    src="/images/tailor.png"
+                    alt="Ahmed Ali - Professional Tailor"
+                    width={450}
+                    height={550}
+                    className="object-cover w-full h-auto"
+                  />
+                </div>
               </div>
             </div>
 
             {/* Right Column - Profile Content */}
             <div className="flex flex-col justify-center">
-              
+
               {/* Name */}
-              <h3 className="font-gelica font-black text-[36px] md:text-[40px] leading-tight text-black mb-2">
+              <h3 className="font-gelica font-black text-[28px] sm:text-[32px] md:text-[36px] lg:text-[40px] leading-tight text-black mb-2">
                 Ahmed Ali
               </h3>
 
               {/* Description */}
-              <p className="font-satoshi text-[16px] text-gray-600 mb-5 leading-[1.6]">
+              <p className="font-satoshi text-[14px] sm:text-[15px] md:text-[16px] text-gray-600 mb-4 sm:mb-5 leading-[1.6]">
                 Expert in stitching with consistent quality and on-time delivery.
               </p>
 
               {/* Statistics */}
-              <div className="flex flex-wrap gap-4 md:gap-6 mb-5">
+              <div className="flex flex-wrap gap-3 sm:gap-4 md:gap-6 mb-4 sm:mb-5">
                 {/* Customer Rating */}
                 <div className="flex items-center gap-2">
-                  <span className="text-[#9A54FD] text-[18px]">★</span>
-                  <span className="font-satoshi text-[15px] text-gray-700">
+                  <span className="text-[#9A54FD] text-[16px] sm:text-[18px]">★</span>
+                  <span className="font-satoshi text-[13px] sm:text-[14px] md:text-[15px] text-gray-700">
                     4.9 Customer Rating
                   </span>
                 </div>
 
                 {/* Orders Completed */}
-                <div className="font-satoshi text-[15px] text-gray-700">
+                <div className="font-satoshi text-[13px] sm:text-[14px] md:text-[15px] text-gray-700">
                   450+ Orders Completed
                 </div>
 
@@ -500,10 +512,10 @@ export default function Features() {
               </div>
 
               {/* CTA Button */}
-              <Link href="/contact" className="px-6 py-3 rounded-[12px] bg-white border-2 border-[#9A54FD] text-[#9A54FD] hover:bg-[#9A54FD] hover:text-white transition font-satoshi text-[15px] font-medium w-fit inline-block">
+              <Link href="/contact" className="px-6 py-3 rounded-[12px] bg-white border-2 border-[#9A54FD] text-[#9A54FD] hover:bg-[#9A54FD] hover:text-white font-satoshi text-[15px] font-medium w-fit inline-block">
                 Book Now →
               </Link>
-            </div>  
+            </div>
 
           </div>
         </div>
