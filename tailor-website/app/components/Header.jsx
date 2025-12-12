@@ -46,6 +46,7 @@ export default function Header() {
         lg:mt-[40px]
         font-satoshi
         relative
+        
       "
     >
       {/* Left Side: Logo */}

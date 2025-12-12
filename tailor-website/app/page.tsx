@@ -6,7 +6,7 @@ export default function Home() {
     <>
 
       {/* Why Choose Us Section */}
-      <section className="w-full max-w-[1200px] mx-auto mt-12 sm:mt-16 md:mt-20 lg:mt-[100px] px-4 sm:px-6 py-6 sm:py-8 bg-white rounded-[8px]">
+      <section className="w-full max-w-[1200px] mx-auto mt-12 sm:mt-16 md:mt-20 lg:mt-[100px] px-4 sm:px-6 py-6 sm:py-8 bg-white rounded-[8px] ">
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 md:gap-8">
 
           {/* Left Title */}
@@ -20,7 +20,7 @@ export default function Home() {
           <div className="col-span-1 lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
 
             {/* Feature 1 */}
-            <div data-aos="fade-up" data-aos-delay="100" className="flex flex-col gap-2 sm:gap-2.5">
+            <div  className="flex flex-col gap-2 sm:gap-2.5">
               <h3 className="font-gelica font-black text-[18px] sm:text-[20px] lg:text-[22px] text-black">
                 Easy to Use
               </h3>
@@ -54,7 +54,7 @@ export default function Home() {
             </div>
 
             {/* Feature 3 */}
-            <div data-aos="fade-up" data-aos-delay="300" className="flex flex-col gap-2 sm:gap-2.5">
+            <div className="flex flex-col gap-2 sm:gap-2.5">
               <h3 className="font-gelica font-black text-[18px] sm:text-[20px] lg:text-[22px] text-black">
                 Reliable & Secure
               </h3>
@@ -75,7 +75,7 @@ export default function Home() {
       </section>
 
       {/* Explore Categories Section */}
-      <section className="w-full mt-0 bg-[#F7F7F7] py-8 sm:py-10">
+      <section className="w-full mt-0 bg-[#F7F7F7] py-8 sm:py-10 ">
         <div className="max-w-[1200px] mx-auto px-4 sm:px-6">
           {/* Section Heading */}
           <div className="text-center mb-8 sm:mb-12 md:mb-[60px] mt-6 sm:mt-8 md:mt-10">
@@ -177,7 +177,7 @@ export default function Home() {
       </section>
 
       {/* ================= HERO SECTION ================= */}
-      <section className="w-full py-8 sm:py-10 mt-6 sm:mt-8 md:mt-10">
+      <section className="w-full py-8 sm:py-10 mt-6 sm:mt-8 md:mt-10 overflow-x-hidden">
         <div className="max-w-[1200px] mx-auto px-4 sm:px-6 grid grid-cols-1 md:grid-cols-2 items-center gap-8 sm:gap-10">
 
           {/* ---------- LEFT CONTENT ---------- */}
@@ -208,16 +208,16 @@ export default function Home() {
 
 
           {/* ---------- RIGHT IMAGE (cropped) ---------- */}
-          <div className="relative flex justify-center md:justify-end md:-mr-[182px] h-[300px] sm:h-[380px] md:h-[460px] overflow-hidden">
-
-            <Image
-              src="/images/Full Mobile 2.png"
-              width={500}
-              height={500}
-              alt="Mobile UI"
-              className="pointer-events-none select-none object-contain w-auto h-full"
-            />
-
+          <div className="relative w-full flex justify-center md:justify-end h-[300px] sm:h-[380px] md:h-[460px] overflow-hidden">
+            <div className="relative h-full flex items-center justify-center md:justify-end md:translate-x-[182px]">
+              <Image
+                src="/images/Full Mobile 2.png"
+                width={500}
+                height={500}
+                alt="Mobile UI"
+                className="pointer-events-none select-none object-contain w-auto h-full"
+              />
+            </div>
           </div>
 
         </div>
@@ -244,7 +244,7 @@ export default function Home() {
         <div className="max-w-[1400px] mx-auto mt-8 sm:mt-12 md:mt-16 grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 md:gap-10 px-4 sm:px-6">
 
           {/* --------- Tailor Card --------- */}
-          <div data-aos="flip-left" data-aos-delay="100" className="bg-[#E6DBFF] rounded-[20px] sm:rounded-[24px] p-6 sm:p-8 md:p-10 flex flex-col items-center text-center relative overflow-hidden">
+          <div  className="bg-[#E6DBFF] rounded-[20px] sm:rounded-[24px] p-6 sm:p-8 md:p-10 flex flex-col items-center text-center relative overflow-hidden">
 
             {/* Badge */}
             <div className="px-3 sm:px-4 py-1 bg-white/60 rounded-full border border-white/70 backdrop-blur-sm mb-4 sm:mb-6">
@@ -318,11 +318,11 @@ export default function Home() {
 
 
       {/* ==================== SMART ORDER SECTION ==================== */}
-      <section data-aos="fade-up" className="w-full py-12 sm:py-16 md:py-20 lg:py-24 bg-white overflow-hidden">
+      <section className="w-full py-12 sm:py-16 md:py-20 lg:py-24 bg-white overflow-hidden">
         <div className="relative grid grid-cols-1 md:grid-cols-2 items-center gap-0">
 
           {/* ===== Left Image - Completely aligned to left edge ===== */}
-          <div data-aos="fade-right" className="relative w-full">
+          <div className="relative w-full">
             <Image
               src="/images/Tracking.png"
               width={680}
@@ -372,7 +372,7 @@ export default function Home() {
       </section>
 
      {/* ==================== CRAFTED FOR TAILORS SECTION ==================== */}
-       <section className="w-full py-12 sm:py-16 md:py-20 lg:py-28 bg-white">
+       <section className="w-full py-12 sm:py-16 md:py-20 lg:py-28 bg-white overflow-x-hidden">
          <div className="max-w-[1400px] mx-auto pl-4 sm:pl-6 pr-4 sm:pr-0 grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 md:gap-16">
 
            {/* ===== Left Content ===== */}
@@ -410,7 +410,7 @@ export default function Home() {
           </div>
 
            {/* ===== Right Image ===== */}
-           <div data-aos="fade-left" className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-full flex items-center">
+           <div className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-full flex items-center">
             <div className="relative w-full rounded-[20px] sm:rounded-[24px] md:rounded-l-none md:rounded-r-[24px] overflow-hidden">
               <Image
                 src="/images/FT.png"
@@ -444,7 +444,7 @@ export default function Home() {
           </div>
 
           {/* ===== Right: Text Content ===== */}
-          <div data-aos="fade-left" className="flex flex-col justify-center">
+          <div className="flex flex-col justify-center">
 
             {/* Title */}
             <h2 className="font-gelica font-black text-[28px] sm:text-[32px] md:text-[38px] lg:text-[48px] leading-[1.2] text-black max-w-[600px]">
@@ -692,11 +692,11 @@ export default function Home() {
       </section>
 
       {/* ==================== WHAT TAILORS & CUSTOMERS SAY SECTION ==================== */}
-      <section data-aos="fade-up" className="w-full py-8 sm:py-12 pt-12 sm:pt-16 bg-white">
+      <section className="w-full py-8 sm:py-12 pt-12 sm:pt-16 bg-white">
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6">
           
           {/* Section Heading */}
-          <div data-aos="fade-down" className="mb-6 sm:mb-8">
+          <div className="mb-6 sm:mb-8">
             <h2 className="font-gelica font-black text-[28px] sm:text-[32px] md:text-[36px] lg:text-[42px] leading-tight text-black mb-2 sm:mb-3">
               What <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#9854F5] to-[#F554D5]">Tailors & Customers</span> Say
             </h2>
@@ -720,7 +720,7 @@ export default function Home() {
             </div>
 
             {/* Card 2: Text Review with Background */}
-            <div data-aos="zoom-in" data-aos-delay="200" className="relative rounded-[16px] sm:rounded-[20px] overflow-visible h-[350px] sm:h-[400px] md:h-[450px] max-w-[320px] mx-auto sm:mx-0 w-full">
+            <div className="relative rounded-[16px] sm:rounded-[20px] overflow-visible h-[350px] sm:h-[400px] md:h-[450px] max-w-[320px] mx-auto sm:mx-0 w-full">
               {/* Background Image */}
               <div className="absolute inset-0 rounded-[16px] sm:rounded-[20px] overflow-hidden">
                 <Image
