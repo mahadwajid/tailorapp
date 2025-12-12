@@ -10,7 +10,7 @@ export default function Home() {
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 md:gap-8">
 
           {/* Left Title */}
-          <div className="col-span-1 lg:col-span-1">
+          <div className="col-span-1 lg:col-span-1" data-aos="fade-right" data-aos-duration="800">
             <h2 className="font-gelica font-black text-[32px] sm:text-[36px] md:text-[40px] lg:text-[42px] leading-tight text-black">
               Why <br className="hidden lg:block" /> Choose Us
             </h2>
@@ -20,7 +20,7 @@ export default function Home() {
           <div className="col-span-1 lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
 
             {/* Feature 1 */}
-            <div  className="flex flex-col gap-2 sm:gap-2.5">
+            <div className="flex flex-col gap-2 sm:gap-2.5" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
               <h3 className="font-gelica font-black text-[18px] sm:text-[20px] lg:text-[22px] text-black">
                 Easy to Use
               </h3>
@@ -37,7 +37,7 @@ export default function Home() {
             </div>
 
             {/* Feature 2 */}
-            <div className="flex flex-col gap-2 sm:gap-2.5">
+            <div className="flex flex-col gap-2 sm:gap-2.5" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
               <h3 className="font-gelica font-black text-[18px] sm:text-[20px] lg:text-[22px] text-black">
                 Time Saver
               </h3>
@@ -54,7 +54,7 @@ export default function Home() {
             </div>
 
             {/* Feature 3 */}
-            <div className="flex flex-col gap-2 sm:gap-2.5">
+            <div className="flex flex-col gap-2 sm:gap-2.5" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
               <h3 className="font-gelica font-black text-[18px] sm:text-[20px] lg:text-[22px] text-black">
                 Reliable & Secure
               </h3>
@@ -78,7 +78,7 @@ export default function Home() {
       <section className="w-full mt-0 bg-[#F7F7F7] py-8 sm:py-10 ">
         <div className="max-w-[1200px] mx-auto px-4 sm:px-6">
           {/* Section Heading */}
-          <div className="text-center mb-8 sm:mb-12 md:mb-[60px] mt-6 sm:mt-8 md:mt-10">
+          <div className="text-center mb-8 sm:mb-12 md:mb-[60px] mt-6 sm:mt-8 md:mt-10" data-aos="fade-up" data-aos-duration="800">
             <h2 className="font-gelica font-black text-[28px] sm:text-[34px] md:text-[38px] lg:text-[42px] text-black mb-3">
               Explore <span className="bg-gradient-to-r from-[#FF6F61] to-[#9A54FD] bg-clip-text text-transparent">Categories</span>
             </h2>
@@ -100,7 +100,7 @@ export default function Home() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 lg:gap-10">
 
             {/* Men's Clothing */}
-            <a href="/categories" className="relative group rounded-[16px] sm:rounded-[20px] overflow-hidden shadow-md cursor-pointer block">
+            <a href="/categories" className="relative group rounded-[16px] sm:rounded-[20px] overflow-hidden shadow-md cursor-pointer block" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="600">
               <img src="/images/Mens Clothing.png" className="w-full h-[200px] sm:h-[220px] md:h-[230px] object-cover" />
               <div className="absolute bottom-3 sm:bottom-4 left-3 sm:left-4 text-white">
                 <h3 className="font-gelica font-black text-[16px] sm:text-[18px] md:text-[20px]">Men's Clothing</h3>
@@ -109,7 +109,7 @@ export default function Home() {
             </a>
 
             {/* Women's Clothing */}
-            <a href="/categories" className="relative group rounded-[16px] sm:rounded-[20px] overflow-hidden shadow-md cursor-pointer block">
+            <a href="/categories" className="relative group rounded-[16px] sm:rounded-[20px] overflow-hidden shadow-md cursor-pointer block" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="600">
               <img src="/images/Women Clothing.png" className="w-full h-[200px] sm:h-[220px] md:h-[230px] object-cover group-hover:scale-105 transition" />
               <div className="absolute bottom-3 sm:bottom-4 left-3 sm:left-4 text-white">
                 <h3 className="font-gelica font-black text-[16px] sm:text-[18px] md:text-[20px]">Women's Clothing</h3>
@@ -118,7 +118,7 @@ export default function Home() {
             </a>
 
             {/* Kids Clothing */}
-            <a href="/categories" className="relative group rounded-[16px] sm:rounded-[20px] overflow-hidden shadow-md cursor-pointer block">
+            <a href="/categories" className="relative group rounded-[16px] sm:rounded-[20px] overflow-hidden shadow-md cursor-pointer block" data-aos="zoom-in" data-aos-delay="300" data-aos-duration="600">
               <img src="/images/Kids Clothing.png" className="w-full h-[200px] sm:h-[220px] md:h-[230px] object-cover group-hover:scale-105 transition" />
               <div className="absolute bottom-3 sm:bottom-4 left-3 sm:left-4 text-white">
                 <h3 className="font-gelica font-black text-[16px] sm:text-[18px] md:text-[20px]">Kids' Clothing</h3>
@@ -127,7 +127,7 @@ export default function Home() {
             </a>
 
             {/* Traditional */}
-            <a href="/categories" className="relative group rounded-[16px] sm:rounded-[20px] overflow-hidden shadow-md cursor-pointer block">
+            <a href="/categories" className="relative group rounded-[16px] sm:rounded-[20px] overflow-hidden shadow-md cursor-pointer block" data-aos="zoom-in" data-aos-delay="400" data-aos-duration="600">
               <img src="/images/Women Clothing.png" className="w-full h-[200px] sm:h-[220px] md:h-[230px] object-cover group-hover:scale-105 transition" />
               <div className="absolute bottom-3 sm:bottom-4 left-3 sm:left-4 text-white">
                 <h3 className="font-gelica font-black text-[16px] sm:text-[18px] md:text-[20px]">Traditional</h3>
@@ -136,7 +136,7 @@ export default function Home() {
             </a>
 
             {/* Accessories */}
-            <a href="/categories" className="relative group rounded-[16px] sm:rounded-[20px] overflow-hidden shadow-md cursor-pointer block">
+            <a href="/categories" className="relative group rounded-[16px] sm:rounded-[20px] overflow-hidden shadow-md cursor-pointer block" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="600">
               <img src="/images/Mens Clothing.png" className="w-full h-[200px] sm:h-[220px] md:h-[230px] object-cover" />
               <div className="absolute bottom-3 sm:bottom-4 left-3 sm:left-4 text-white">
                 <h3 className="font-gelica font-black text-[16px] sm:text-[18px] md:text-[20px]">Accessories</h3>
@@ -147,6 +147,9 @@ export default function Home() {
             <a
               href="/categories"
               className="relative rounded-[16px] sm:rounded-[20px] overflow-hidden shadow-md cursor-pointer group flex items-end p-4 sm:p-6 h-[200px] sm:h-[220px] md:h-[230px]"
+              data-aos="zoom-in"
+              data-aos-delay="600"
+              data-aos-duration="600"
             >
               <Image
                 src="/images/Hero.png"
@@ -181,7 +184,7 @@ export default function Home() {
         <div className="max-w-[1200px] mx-auto px-4 sm:px-6 grid grid-cols-1 md:grid-cols-2 items-center gap-8 sm:gap-10">
 
           {/* ---------- LEFT CONTENT ---------- */}
-          <div>
+          <div data-aos="fade-right" data-aos-duration="800">
             <h1 className="font-gelica font-black text-[28px] sm:text-[36px] md:text-[42px] lg:text-[48px] xl:text-[54px] leading-[1.2] text-black">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF6F61] to-[#9A54FD]">
                 All-in-one
@@ -207,9 +210,9 @@ export default function Home() {
           </div>
 
 
-          {/* ---------- RIGHT IMAGE (cropped) ---------- */}
-          <div className="relative w-full flex justify-center md:justify-end h-[300px] sm:h-[380px] md:h-[460px] overflow-hidden">
-            <div className="relative h-full flex items-center justify-center md:justify-end md:translate-x-[182px]">
+          {/* ---------- RIGHT IMAGE ---------- */}
+          <div className="relative w-full flex justify-center md:justify-end h-[300px] sm:h-[380px] md:h-[460px] lg:h-[520px]" data-aos="fade-left" data-aos-delay="200" data-aos-duration="800">
+            <div className="relative h-full w-full flex items-center justify-center md:justify-end">
               <Image
                 src="/images/Full Mobile 2.png"
                 width={500}
@@ -226,7 +229,7 @@ export default function Home() {
 
       <section className="w-full py-12 sm:py-16 md:py-20 lg:py-24 bg-[#F7F7F7]">
         {/* --------- Section Heading --------- */}
-        <div className="text-center max-w-[800px] mx-auto px-4 sm:px-6">
+        <div className="text-center max-w-[800px] mx-auto px-4 sm:px-6" data-aos="fade-up" data-aos-duration="800">
           <h2 className="font-gelica font-black text-[28px] sm:text-[32px] md:text-[40px] lg:text-[48px] leading-tight text-black">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF6F61] to-[#9A54FD]">
               Connected
@@ -244,7 +247,7 @@ export default function Home() {
         <div className="max-w-[1400px] mx-auto mt-8 sm:mt-12 md:mt-16 grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 md:gap-10 px-4 sm:px-6">
 
           {/* --------- Tailor Card --------- */}
-          <div  className="bg-[#E6DBFF] rounded-[20px] sm:rounded-[24px] p-6 sm:p-8 md:p-10 flex flex-col items-center text-center relative overflow-hidden">
+          <div className="bg-[#E6DBFF] rounded-[20px] sm:rounded-[24px] p-6 sm:p-8 md:p-10 flex flex-col items-center text-center relative overflow-hidden" data-aos="flip-left" data-aos-delay="100" data-aos-duration="800">
 
             {/* Badge */}
             <div className="px-3 sm:px-4 py-1 bg-white/60 rounded-full border border-white/70 backdrop-blur-sm mb-4 sm:mb-6">
@@ -278,7 +281,7 @@ export default function Home() {
 
 
           {/* --------- Customer Card --------- */}
-          <div className="bg-[#FFE1E0] rounded-[20px] sm:rounded-[24px] p-6 sm:p-8 md:p-10 flex flex-col items-center text-center relative overflow-hidden">
+          <div className="bg-[#FFE1E0] rounded-[20px] sm:rounded-[24px] p-6 sm:p-8 md:p-10 flex flex-col items-center text-center relative overflow-hidden" data-aos="flip-right" data-aos-delay="200" data-aos-duration="800">
 
             {/* Badge */}
             <div className="px-3 sm:px-4 py-1 bg-white/60 rounded-full border border-white/70 backdrop-blur-sm mb-4 sm:mb-6">
@@ -322,7 +325,7 @@ export default function Home() {
         <div className="relative grid grid-cols-1 md:grid-cols-2 items-center gap-0">
 
           {/* ===== Left Image - Completely aligned to left edge ===== */}
-          <div className="relative w-full">
+          <div className="relative w-full" data-aos="fade-right" data-aos-duration="800">
             <Image
               src="/images/Tracking.png"
               width={680}
@@ -335,7 +338,7 @@ export default function Home() {
           </div>
 
           {/* ===== Right Content ===== */}
-          <div className="px-4 sm:px-6 md:px-12 lg:px-16 py-6 md:py-0">
+          <div className="px-4 sm:px-6 md:px-12 lg:px-16 py-6 md:py-0" data-aos="fade-left" data-aos-delay="200" data-aos-duration="800">
 
             {/* Category Badge */}
             <div className="mb-3 sm:mb-4">
@@ -376,7 +379,7 @@ export default function Home() {
          <div className="max-w-[1400px] mx-auto pl-4 sm:pl-6 pr-4 sm:pr-0 grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 md:gap-16">
 
            {/* ===== Left Content ===== */}
-           <div className="flex flex-col justify-center">
+           <div className="flex flex-col justify-center" data-aos="fade-right" data-aos-duration="800">
 
             {/* Category Badge */}
             <span className="font-satoshi text-[11px] sm:text-[12px] tracking-[2px] uppercase text-[#9A54FD] mb-3 sm:mb-4">
@@ -410,7 +413,7 @@ export default function Home() {
           </div>
 
            {/* ===== Right Image ===== */}
-           <div className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-full flex items-center">
+           <div className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-full flex items-center" data-aos="fade-left" data-aos-delay="200" data-aos-duration="800">
             <div className="relative w-full rounded-[20px] sm:rounded-[24px] md:rounded-l-none md:rounded-r-[24px] overflow-hidden">
               <Image
                 src="/images/FT.png"
@@ -429,7 +432,7 @@ export default function Home() {
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 grid grid-cols-1 md:grid-cols-2 items-center gap-8 sm:gap-12 md:gap-16">
           
           {/* ===== Left: Mobile Phones Image - Cropped 20% from bottom ===== */}
-          <div className="relative flex items-start justify-center h-[400px] sm:h-[500px] md:h-[600px]">
+          <div className="relative flex items-start justify-center h-[400px] sm:h-[500px] md:h-[600px]" data-aos="fade-right" data-aos-duration="800">
             <div className="relative w-full flex items-center justify-center">
               <div className="relative w-full max-w-[500px] h-[400px] sm:h-[500px] overflow-hidden">
                 <Image
@@ -444,7 +447,7 @@ export default function Home() {
           </div>
 
           {/* ===== Right: Text Content ===== */}
-          <div className="flex flex-col justify-center">
+          <div className="flex flex-col justify-center" data-aos="fade-left" data-aos-delay="200" data-aos-duration="800">
 
             {/* Title */}
             <h2 className="font-gelica font-black text-[28px] sm:text-[32px] md:text-[38px] lg:text-[48px] leading-[1.2] text-black max-w-[600px]">
@@ -477,7 +480,7 @@ export default function Home() {
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6">
           
           {/* Section Heading */}
-          <div className="text-center mb-6 sm:mb-8 md:mb-10">
+          <div className="text-center mb-6 sm:mb-8 md:mb-10" data-aos="fade-up" data-aos-duration="800">
             <h2 className="font-gelica font-black text-[28px] sm:text-[32px] md:text-[36px] lg:text-[42px] leading-tight text-black mb-2">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF6F61] to-[#9A54FD]">
                 Top Tailors
@@ -493,7 +496,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-6 sm:gap-8 lg:gap-12">
 
             {/* Left Column - Tailor Image */}
-            <div className="relative w-full flex items-center justify-center">
+            <div className="relative w-full flex items-center justify-center" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="800">
               <div className="relative w-full max-w-[450px]">
                 {/* Background Ellipse - positioned behind and larger */}
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[140%] h-[140%] z-0">
@@ -519,7 +522,7 @@ export default function Home() {
             </div>
 
             {/* Right Column - Profile Content */}
-            <div className="flex flex-col justify-center">
+            <div className="flex flex-col justify-center" data-aos="fade-left" data-aos-delay="200" data-aos-duration="800">
 
               {/* Name */}
               <h3 className="font-gelica font-black text-[28px] sm:text-[32px] md:text-[36px] lg:text-[40px] leading-tight text-black mb-2">
@@ -580,7 +583,7 @@ export default function Home() {
         <div className="relative z-10 max-w-[1400px] mx-auto px-6">
 
           {/* Section Heading */}
-          <div className="text-center mb-10">
+          <div className="text-center mb-10" data-aos="fade-up" data-aos-duration="800">
             <h2 className="font-gelica font-black text-[36px] md:text-[42px] leading-tight text-white mb-3">
               Get Started in 3 Easy Steps
             </h2>
@@ -593,7 +596,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
 
             {/* Step 1: Add Customer / Place Order */}
-            <div className="flex flex-col items-center text-center">
+            <div className="flex flex-col items-center text-center" data-aos="fade-up" data-aos-delay="100" data-aos-duration="600">
               <div className="w-16 h-16 bg-white rounded-[16px] flex items-center justify-center mb-4 shadow-lg">
                 <svg className="w-8 h-8 text-[#9854F5]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
@@ -608,7 +611,7 @@ export default function Home() {
             </div>
 
             {/* Step 2: Track Progress */}
-            <div className="flex flex-col items-center text-center">
+            <div className="flex flex-col items-center text-center" data-aos="fade-up" data-aos-delay="200" data-aos-duration="600">
               <div className="w-16 h-16 bg-white rounded-[16px] flex items-center justify-center mb-4 shadow-lg">
                 <svg className="w-8 h-8 text-[#9854F5]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
@@ -623,7 +626,7 @@ export default function Home() {
             </div>
 
             {/* Step 3: Deliver & Feedback */}
-            <div className="flex flex-col items-center text-center">
+            <div className="flex flex-col items-center text-center" data-aos="fade-up" data-aos-delay="300" data-aos-duration="600">
               <div className="w-16 h-16 bg-white rounded-[16px] flex items-center justify-center mb-4 shadow-lg">
                 <svg className="w-8 h-8 text-[#9854F5]" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
@@ -650,7 +653,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-6 lg:gap-8">
 
             {/* Left Column - Tailor Shop Image */}
-            <div className="relative w-full max-w-[500px]">
+            <div className="relative w-full max-w-[500px]" data-aos="fade-right" data-aos-duration="800">
               <div className="relative rounded-[16px] overflow-hidden shadow-xl">
                 <Image
                   src="/images/about.png"
@@ -663,7 +666,7 @@ export default function Home() {
             </div>
 
             {/* Right Column - Text Content */}
-            <div className="flex flex-col justify-center">
+            <div className="flex flex-col justify-center" data-aos="fade-left" data-aos-delay="200" data-aos-duration="800">
 
               {/* Heading */}
               <h2 className="font-gelica font-black text-[32px] md:text-[36px] leading-tight mb-3">
@@ -696,7 +699,7 @@ export default function Home() {
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6">
           
           {/* Section Heading */}
-          <div className="mb-6 sm:mb-8">
+          <div className="mb-6 sm:mb-8" data-aos="fade-up" data-aos-duration="800">
             <h2 className="font-gelica font-black text-[28px] sm:text-[32px] md:text-[36px] lg:text-[42px] leading-tight text-black mb-2 sm:mb-3">
               What <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#9854F5] to-[#F554D5]">Tailors & Customers</span> Say
             </h2>
@@ -709,7 +712,7 @@ export default function Home() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
 
             {/* Card 1: Image Card */}
-            <div className="relative rounded-[16px] sm:rounded-[20px] overflow-hidden max-w-[320px] mx-auto sm:mx-0 w-full">
+            <div className="relative rounded-[16px] sm:rounded-[20px] overflow-hidden max-w-[320px] mx-auto sm:mx-0 w-full" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="600">
               <Image
                 src="/images/Feedback1.png"
                 alt="Customer Review"
@@ -720,7 +723,7 @@ export default function Home() {
             </div>
 
             {/* Card 2: Text Review with Background */}
-            <div className="relative rounded-[16px] sm:rounded-[20px] overflow-visible h-[350px] sm:h-[400px] md:h-[450px] max-w-[320px] mx-auto sm:mx-0 w-full">
+            <div className="relative rounded-[16px] sm:rounded-[20px] overflow-visible h-[350px] sm:h-[400px] md:h-[450px] max-w-[320px] mx-auto sm:mx-0 w-full" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="600">
               {/* Background Image */}
               <div className="absolute inset-0 rounded-[16px] sm:rounded-[20px] overflow-hidden">
                 <Image
@@ -772,7 +775,7 @@ export default function Home() {
             </div>
 
             {/* Card 3: Text Review with Background */}
-            <div className="relative rounded-[16px] sm:rounded-[20px] overflow-visible h-[350px] sm:h-[400px] md:h-[450px] max-w-[320px] mx-auto sm:mx-0 w-full">
+            <div className="relative rounded-[16px] sm:rounded-[20px] overflow-visible h-[350px] sm:h-[400px] md:h-[450px] max-w-[320px] mx-auto sm:mx-0 w-full" data-aos="zoom-in" data-aos-delay="300" data-aos-duration="600">
               {/* Background Image */}
               <div className="absolute inset-0 rounded-[16px] sm:rounded-[20px] overflow-hidden">
                 <Image
@@ -872,7 +875,7 @@ export default function Home() {
             </div>
 
             {/* Right Side - QR Code & App Store Badges */}
-            <div className="flex flex-col items-center md:items-end gap-3 sm:gap-4 md:gap-2 lg:gap-3">
+            <div className="flex flex-col items-center md:items-end gap-3 sm:gap-4 md:gap-2 lg:gap-3" data-aos="fade-left" data-aos-delay="200" data-aos-duration="800">
               {/* QR Code */}
               <div className="p-2 sm:p-3 md:p-3 lg:p-4 bg-white rounded-lg sm:rounded-xl self-center md:self-end md:translate-x-[-40px]">
                 <div className="w-[140px] h-[140px] sm:w-[160px] sm:h-[160px] md:w-[180px] md:h-[180px] lg:w-[200px] lg:h-[200px] flex items-center justify-center">
