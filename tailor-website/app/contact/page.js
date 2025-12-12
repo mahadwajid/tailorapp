@@ -1,6 +1,62 @@
+"use client"
+
 import Image from "next/image"
+import { useState } from "react"
 
 export default function Contact() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: ""
+  })
+  const [status, setStatus] = useState({
+    submitting: false,
+    submitted: false,
+    error: false,
+    message: ""
+  })
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    })
+  }
+
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    setStatus({ submitting: true, submitted: false, error: false, message: "" })
+
+    try {
+      const response = await fetch("https://formspree.io/f/mnnelavg", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      })
+
+      if (response.ok) {
+        setStatus({
+          submitting: false,
+          submitted: true,
+          error: false,
+          message: "Thank you! Your message has been sent successfully."
+        })
+        setFormData({ name: "", email: "", message: "" })
+      } else {
+        throw new Error("Form submission failed")
+      }
+    } catch (error) {
+      setStatus({
+        submitting: false,
+        submitted: false,
+        error: true,
+        message: "Oops! Something went wrong. Please try again."
+      })
+    }
+  }
+
   return (
     <>
       {/* ==================== HERO SECTION ==================== */}
@@ -45,49 +101,86 @@ export default function Contact() {
             
             {/* Left Column - Contact Form */}
             <div data-aos="fade-right" className="bg-white rounded-[20px] p-8 shadow-md">
-              <form className="space-y-5">
+              <form onSubmit={handleSubmit} className="space-y-5">
                 {/* Full Name */}
                 <div>
-                  <label className="font-satoshi text-[14px] text-gray-700 mb-2 block">
+                  <label htmlFor="name" className="font-satoshi text-[14px] text-gray-700 mb-2 block">
                     Full Name
                   </label>
                   <input
+                    id="name"
+                    name="name"
                     type="text"
                     placeholder="Enter Full Name"
+                    value={formData.name}
+                    onChange={handleChange}
+                    required
                     className="w-full px-4 py-3 rounded-[12px] border border-gray-300 focus:border-[#9A54FD] focus:outline-none font-satoshi text-[14px]"
                   />
                 </div>
 
                 {/* Email Address */}
                 <div>
-                  <label className="font-satoshi text-[14px] text-gray-700 mb-2 block">
+                  <label htmlFor="email" className="font-satoshi text-[14px] text-gray-700 mb-2 block">
                     Email Address
                   </label>
                   <input
+                    id="email"
+                    name="email"
                     type="email"
                     placeholder="Enter Email Address"
+                    value={formData.email}
+                    onChange={handleChange}
+                    required
                     className="w-full px-4 py-3 rounded-[12px] border border-gray-300 focus:border-[#9A54FD] focus:outline-none font-satoshi text-[14px]"
                   />
                 </div>
 
                 {/* Your Message */}
                 <div>
-                  <label className="font-satoshi text-[14px] text-gray-700 mb-2 block">
+                  <label htmlFor="message" className="font-satoshi text-[14px] text-gray-700 mb-2 block">
                     Your Message
                   </label>
                   <textarea
+                    id="message"
+                    name="message"
                     placeholder="Enter your message"
                     rows={6}
+                    value={formData.message}
+                    onChange={handleChange}
+                    required
                     className="w-full px-4 py-3 rounded-[12px] border border-gray-300 focus:border-[#9A54FD] focus:outline-none font-satoshi text-[14px] resize-none"
                   ></textarea>
                 </div>
 
+                {/* Success/Error Message */}
+                {status.message && (
+                  <div className={`p-4 rounded-[12px] ${
+                    status.submitted 
+                      ? "bg-green-50 border border-green-200 text-green-800" 
+                      : "bg-red-50 border border-red-200 text-red-800"
+                  }`}>
+                    <p className="font-satoshi text-[14px]">{status.message}</p>
+                  </div>
+                )}
+
                 {/* Submit Button */}
                 <button
                   type="submit"
-                  className="w-full px-6 py-3 rounded-full bg-white border-2 border-[#9A54FD] text-[#9A54FD] hover:bg-[#9A54FD] hover:text-white transition font-satoshi text-[15px] font-medium flex items-center justify-center gap-2"
+                  disabled={status.submitting}
+                  className="w-full px-6 py-3 rounded-full bg-white border-2 border-[#9A54FD] text-[#9A54FD] hover:bg-[#9A54FD] hover:text-white transition font-satoshi text-[15px] font-medium flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
                 >
-                  Submit Form →
+                  {status.submitting ? (
+                    <>
+                      <svg className="animate-spin h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                        <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                        <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                      </svg>
+                      Sending...
+                    </>
+                  ) : (
+                    "Submit Form →"
+                  )}
                 </button>
               </form>
             </div>
